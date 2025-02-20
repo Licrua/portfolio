@@ -4,6 +4,7 @@ $main-color: white;
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
 }
 .header {
   width: 100%;
@@ -11,14 +12,21 @@ $main-color: white;
 //   background-color: rgba(0, 0, 0, 0.5);
 background: black;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 72px;
+  padding: 50px
 }
 
+.nav {
+	// height: 30px;
+	display: flex;
+	// height: 100px;
+}
 .list {
     display: flex;
     gap: 24px;
+	align-items: center;
   }
   .link {
     font-size: 1rem;
@@ -29,5 +37,14 @@ background: black;
 	max-width: 100px;
 	background: white;
 	border-radius: 10%;
+	padding: 10px;
+  }
+
+  .active {
+	background: purple;
+	display: inline-block;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
 	padding: 10px;
   }

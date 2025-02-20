@@ -1,30 +1,21 @@
-function HeaderNav() {
+import navItems from "@/data/navItems";
+import styles from "@/app/styles/componentStyles/headerNav.css";
+
+export function HeaderNav() {
   return (
-    <nav className="header__nav">
-      <ul className="header__list">
-        <li className="header__item">
-          <a className="header__link" href="/exp">
-            Опыт
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="/works">
-            Работы
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="/achievements">
-            Награды
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="/contact">
-            Контакты
-          </a>
-        </li>
+    <nav className={styles.nav}>
+      <ul className={styles.list}>
+        {navItems.map(({ href, label, active }) => (
+          <li key={href} className={styles.item}>
+            <a
+              className={`${styles.link} ${active ? styles.active : ""}`}
+              href={href}
+            >
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
 }
-
-export default HeaderNav;

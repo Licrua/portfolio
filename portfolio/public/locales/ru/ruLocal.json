@@ -1,4 +1,11 @@
 {
-"greeting": "Hello"
+	"header": {
+	  "nav": {
+		"experience": "Опыт",
+		"works": "Работы",
+		"achievements": "Награды",
+		"contact": "Контакты"
+	  }
+	}
   }
   

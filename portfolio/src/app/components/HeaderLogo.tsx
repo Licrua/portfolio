@@ -1,9 +1,9 @@
-function HeaderLogo() {
+import styles from "@/styles/componentStyles/headerLogo.module.css";
+
+export function HeaderLogo() {
   return (
-    <a className="header__link" href="">
-      <img className="header__image" src="/images/logo.png" alt="logo" />
+    <a className={styles.logo} href="/">
+      <img className={styles.logoImage} src="/images/logo.png" alt="logo" />
     </a>
   );
 }
-
-export default HeaderLogo;
