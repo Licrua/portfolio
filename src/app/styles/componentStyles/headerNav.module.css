@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.link {
+  font-size: 1rem;
+  color: white;
+}
+
+.active {
+  background: purple;
+  display: inline-block;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}/*# sourceMappingURL=headerNav.module.css.map */

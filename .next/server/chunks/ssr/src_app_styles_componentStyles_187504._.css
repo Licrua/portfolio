@@ -1,0 +1,44 @@
+/* [project]/src/app/styles/componentStyles/header.module.css [app-client] (css) */
+.header-module__ieI34G__header {
+  width: 100%;
+  max-height: 88px;
+  background: #000;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+
+/* [project]/src/app/styles/componentStyles/headerNav.module.css [app-client] (css) */
+.headerNav-module__14CBwW__nav {
+  display: flex;
+}
+
+.headerNav-module__14CBwW__list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.headerNav-module__14CBwW__link {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.headerNav-module__14CBwW__active {
+  background: purple;
+  display: inline-block;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+/* [project]/src/app/styles/componentStyles/headerLogo.module.css [app-client] (css) */
+
+
+
+/*# sourceMappingURL=src_app_styles_componentStyles_187504._.css.map*/
