@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"headerLogo.module.css"}
+{"version":3,"sources":["headerLogo.module.scss","headerLogo.module.css"],"names":[],"mappings":"AAEE;EACD,gBAAA;EACA,iBAAA;EACA,kBAAA;EACA,aAAA;ACDD","file":"headerLogo.module.css"}

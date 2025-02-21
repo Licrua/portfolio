@@ -1,0 +1,26 @@
+.hero {
+  background-color: black;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.textContainer {
+  max-width: 738px;
+}
+
+.title {
+  font-weight: 700;
+  color: white;
+  font-size: 78px;
+  line-height: 93.84px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 32px;
+  font-style: italic;
+}/*# sourceMappingURL=heroSection.module.css.map */

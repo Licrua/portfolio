@@ -6,6 +6,6 @@
     {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/ilakopendoh/Desktop/portfolio/src/app/styles/componentStyles/headerNav.module.css"],"sourcesContent":[".nav {\n  display: flex;\n}\n\n.list {\n  display: flex;\n  gap: 24px;\n  align-items: center;\n}\n\n.link {\n  font-size: 1rem;\n  color: white;\n}\n\n.active {\n  background: purple;\n  display: inline-block;\n  min-height: 100px;\n  display: flex;\n  align-items: center;\n  padding: 10px;\n}/*# sourceMappingURL=headerNav.module.css.map */"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;AAMA;;;;;AAKA"}},
     {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///Users/ilakopendoh/Desktop/portfolio/src/app/styles/componentStyles/headerLogo.module.css"],"sourcesContent":["/*# sourceMappingURL=headerLogo.module.css.map */"],"names":[],"mappings":""}},
-    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///Users/ilakopendoh/Desktop/portfolio/src/app/styles/componentStyles/headerLogo.module.css"],"sourcesContent":[".logoImage {\n  max-width: 100px;\n  background: white;\n  border-radius: 10%;\n  padding: 10px;\n}/*# sourceMappingURL=headerLogo.module.css.map */"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
 }

@@ -1,0 +1,37 @@
+
+@use "../variables" as *;
+
+.hero {
+	background-color: $background;
+	display: flex;
+	padding: 30px;
+	justify-content: space-between;
+	align-items: center;
+	// max-height: 900px;
+	width: 100%;
+}
+
+// .heroImage {
+// 	max-width: 300px;
+// 	border-radius: 50%;
+// 	background: pink;
+// 	padding: 20px;
+// }
+
+.textContainer {
+	max-width: 738px;
+	// max-height: 368px;
+}
+
+.title {
+	font-weight: 700;
+	color: $main-color;
+	font-size: 78px;
+	line-height: 93.84px;
+}
+.description {
+	font-size: 1.2rem;
+	color: $main-color;
+	margin-top: 32px;
+	font-style: italic;
+}

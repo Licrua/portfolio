@@ -1,0 +1,23 @@
+/* [project]/src/app/styles/componentStyles/header.module.css [app-client] (css) */
+.header-module__ieI34G__header {
+  width: 100%;
+  max-height: 88px;
+  background: #000;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+
+/* [project]/src/app/styles/componentStyles/headerLogo.module.css [app-client] (css) */
+.headerLogo-module__t9Zt7q__logoImage {
+  max-width: 100px;
+  background: #fff;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+
+/*# sourceMappingURL=src_app_styles_componentStyles_21ab17._.css.map*/

@@ -1,39 +1,16 @@
-import { Header } from "./components/Header";
-import styles from "./styles/componentStyles/page.module.css";
+import { Header } from "./components/header/Header";
+import HeroSection from "./components/main/HeroSection";
+import JobSection from "./components/main/JobSection";
+import Main from "./components/main/Main";
 
 export default function Home() {
   return (
+	<>
     <Header />
-    // <div className={styles.container}>
-    //   <header className={styles.header}>
-    //     <a className={styles.logo} href="">
-    //       <img className={styles.logoImage} src="/images/logo.png" alt="logo" />
-    //     </a>
-    //     <nav className={styles.nav}>
-    //       <ul className={styles.list}>
-    //         <li className={styles.item}>
-    //           <a className={styles.link} href="/exp">
-    //             Опыт
-    //           </a>
-    //         </li>
-    //         <li className={styles.item}>
-    //           <a className={styles.link} href="/works">
-    //             Работы
-    //           </a>
-    //         </li>
-    //         <li className={styles.item}>
-    //           <a className={styles.link} href="/achievements">
-    //             Награды
-    //           </a>
-    //         </li>
-    //         <li className={styles.item}>
-    //           <a className={`${styles.link} ${styles.active}`} href="/contact">
-    //             Контакты
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </nav>
-    //   </header>
-    // </div>
+	<Main>
+		<HeroSection/>
+		<JobSection/>
+	</Main>
+	</>
   );
 }
