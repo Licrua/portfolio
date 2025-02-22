@@ -16,8 +16,10 @@
 	}
   
   .circle {
-	width: 220px;
-	height: 220px;
+	// width: 300px;
+	min-width: 250px;
+	min-height: 250px;
+	// height: 300px;
 	border-radius: 50%;
 	border: 2px solid #00bcd4;
 	position: relative;

@@ -17,8 +17,8 @@
 }
 
 .skills-module-scss-module__Tuut2q__circle {
-  width: 220px;
-  height: 220px;
+  min-width: 250px;
+  min-height: 250px;
   border-radius: 50%;
   border: 2px solid #00bcd4;
   position: relative;

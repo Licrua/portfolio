@@ -1,4 +1,5 @@
 import { Header } from "./components/header/Header";
+import FeedbackForm from "./components/main/FeedbackForm";
 import HeroSection from "./components/main/HeroSection";
 import JobSection from "./components/main/JobSection";
 import Main from "./components/main/Main";
@@ -16,6 +17,7 @@ export default function Home() {
 		<WorksSection/>
 		<WorksCarousel/>
 		<Skills/>
+		<FeedbackForm/>
 	</Main>
 	</>
   );
