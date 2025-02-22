@@ -1,7 +1,7 @@
 /* [project]/src/app/styles/globals.css [app-client] (css) */
 :root {
-  --background: #fff;
-  --foreground: #171717;
+  --background: #black;
+  --foreground: #white;
 }
 
 @media (prefers-color-scheme: dark) {

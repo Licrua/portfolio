@@ -1,0 +1,41 @@
+.slider {
+	// width: 50%;
+	margin: 0 auto;
+	border: 20px;
+	border: 1px solid grey;
+}
+.image {
+	object-fit: cover;
+	margin: 0 auto;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	// width: 100%;
+	// height: 500px;
+}
+.link {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin-top: auto;
+	font-size: 18px;
+	color: #1dbf73;
+	padding: 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	border: 3px solid gray;
+	transition: color 0.3s ease-in-out;
+	top: 90%;
+	left: 50%;
+}
+
+.link:hover {
+	color: red;
+	border: 1px solid pink;
+}
+.header {
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+}
