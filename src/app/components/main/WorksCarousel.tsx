@@ -11,7 +11,7 @@ import projects from "@/data/carouselItems";
 
 export default function WorksCarousel() {
   return (
-	<div>
+	<div className={styles.container}>
 		<h2 className={styles.header}>Еще работы</h2>
     <div className={styles.slider}>
       <Swiper

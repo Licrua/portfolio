@@ -1,3 +1,4 @@
+import Divider from "./components/generic/Divider";
 import { Header } from "./components/header/Header";
 import FeedbackForm from "./components/main/FeedbackForm";
 import HeroSection from "./components/main/HeroSection";
@@ -17,7 +18,9 @@ export default function Home() {
 		<WorksSection/>
 		<WorksCarousel/>
 		<Skills/>
+		<Divider/>
 		<FeedbackForm/>
+		<Divider/>
 	</Main>
 	</>
   );
