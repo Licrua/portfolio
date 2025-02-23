@@ -1,0 +1,29 @@
+/* [project]/src/app/styles/componentStyles/heroSection.module.css [app-client] (css) */
+.heroSection-module__mAwF6G__hero {
+  background-color: #000;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heroSection-module__mAwF6G__textContainer {
+  max-width: 738px;
+}
+
+.heroSection-module__mAwF6G__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 78px;
+  line-height: 93.84px;
+}
+
+.heroSection-module__mAwF6G__description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 32px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_heroSection_module_b52d8e.css.map*/

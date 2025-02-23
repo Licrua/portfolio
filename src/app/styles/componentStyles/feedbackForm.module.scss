@@ -34,6 +34,9 @@
 	font-size: 1.2rem;
 	color: #8491A0
 }
+// input {
+// 	color: white
+// }
 
 .label {
 	color: white;
@@ -43,12 +46,19 @@
 	min-width: 526px;
 	min-height: 50px;
 	background-color: #181823;
+	// margin: 10px;
 	margin-bottom: 20px;
 	// border: 2px solid pink;
 }
 .input, .textarea {
 	border: transparent;
+	color: white;
+	padding: 10px;
   } 
+  .error {
+	color: red;
+	margin: 10px 0px;
+  }
 
 .textarea {
 	resize: none;

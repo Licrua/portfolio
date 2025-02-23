@@ -84,11 +84,14 @@
 }
 
 .worksCarousel-module__UQ2BiW__header {
-  background: linear-gradient(to right, #1dbf73, #148f50);
+  background-color: #1d1f22;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
   color: #fff;
   text-align: center;
   font-size: 32px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px #0003;

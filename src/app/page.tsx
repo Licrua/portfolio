@@ -14,9 +14,13 @@ export default function Home() {
     <Header />
 	<Main>
 		<HeroSection/>
+		<Divider/>
 		<JobSection/>
+		<Divider/>
 		<WorksSection/>
+		<Divider/>
 		<WorksCarousel/>
+		<Divider/>
 		<Skills/>
 		<Divider/>
 		<FeedbackForm/>

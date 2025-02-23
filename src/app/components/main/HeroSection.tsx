@@ -1,4 +1,4 @@
-import styles from "@/app/styles/componentStyles/heroSection.module.scss";
+import styles from "@/app/styles/componentStyles/heroSection.module.css";
 
 function HeroSection() {
 	return ( 

@@ -1,0 +1,83 @@
+/* [project]/src/app/styles/componentStyles/feedbackForm.module.css [app-client] (css) */
+.feedbackForm-module__kk4LZG__feedback {
+  background: #000;
+  display: grid;
+  padding: 50px;
+  border: none;
+  grid-template-columns: repeat(auto-fit, minmax(526px, 1fr));
+}
+
+.feedbackForm-module__kk4LZG__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feedbackForm-module__kk4LZG__formContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 526px;
+  max-height: 491px;
+}
+
+.feedbackForm-module__kk4LZG__field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.feedbackForm-module__kk4LZG__title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.17px;
+  color: #fff;
+}
+
+.feedbackForm-module__kk4LZG__text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #8491a0;
+}
+
+.feedbackForm-module__kk4LZG__label {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.feedbackForm-module__kk4LZG__input {
+  min-width: 526px;
+  min-height: 50px;
+  background-color: #181823;
+  margin-bottom: 20px;
+}
+
+.feedbackForm-module__kk4LZG__input, .feedbackForm-module__kk4LZG__textarea {
+  border: #0000;
+  color: #fff;
+  padding: 10px;
+}
+
+.feedbackForm-module__kk4LZG__error {
+  color: red;
+  margin: 10px 0;
+}
+
+.feedbackForm-module__kk4LZG__textarea {
+  resize: none;
+  background-color: #181823;
+}
+
+.feedbackForm-module__kk4LZG__button {
+  min-width: 526px;
+  min-height: 75px;
+  background: #5221e6;
+  margin-top: 40px;
+}
+
+.feedbackForm-module__kk4LZG__span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_feedbackForm_module_b52d8e.css.map*/
