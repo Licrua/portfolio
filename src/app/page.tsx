@@ -1,3 +1,4 @@
+import Footer from "./components/footer/Footer";
 import Divider from "./components/generic/Divider";
 import { Header } from "./components/header/Header";
 import FeedbackForm from "./components/main/FeedbackForm";
@@ -10,22 +11,23 @@ import WorksSection from "./components/main/WorksSection";
 
 export default function Home() {
   return (
-	<>
-    <Header />
-	<Main>
-		<HeroSection/>
-		<Divider/>
-		<JobSection/>
-		<Divider/>
-		<WorksSection/>
-		<Divider/>
-		<WorksCarousel/>
-		<Divider/>
-		<Skills/>
-		<Divider/>
-		<FeedbackForm/>
-		<Divider/>
-	</Main>
-	</>
+    <>
+      <Header />
+      <Main>
+        <HeroSection />
+        <Divider />
+        <JobSection />
+        <Divider />
+        <WorksSection />
+        <Divider />
+        <WorksCarousel />
+        <Divider />
+        <Skills />
+        <Divider />
+        <FeedbackForm />
+        <Divider />
+      </Main>
+      <Footer />
+    </>
   );
 }

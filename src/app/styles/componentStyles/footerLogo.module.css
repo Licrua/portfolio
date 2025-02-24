@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.img {
+  border-radius: 50%;
+  border: white 2px solid;
+  background: wheat;
+}/*# sourceMappingURL=footerLogo.module.css.map */
