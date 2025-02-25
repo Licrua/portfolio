@@ -1,11 +1,14 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  webpack(config) {
-    config.devtool = false; // Отключает source maps
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
+
+const nextConfig: NextConfig = withNextIntl({
+  webpack(config: any) {
+    config.devtool = false; // Отключает Source Maps
     return config;
   },
-};
+});
 
 export default nextConfig;

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Footer from "./components/footer/Footer";
 import Divider from "./components/generic/Divider";
 import { Header } from "./components/header/Header";
@@ -10,8 +11,10 @@ import WorksCarousel from "./components/main/WorksCarousel";
 import WorksSection from "./components/main/WorksSection";
 
 export default function Home() {
+  const t = useTranslations("translation.nav");
   return (
     <>
+	<h1>{t('works')}</h1>
       <Header />
       <Main>
         <HeroSection />

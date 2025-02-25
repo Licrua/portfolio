@@ -2,6 +2,6 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/heroSection.module.css"],"sourcesContent":[".hero {\n  background-color: black;\n  display: flex;\n  padding: 30px;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n}\n\n.textContainer {\n  max-width: 738px;\n}\n\n.title {\n  font-weight: 700;\n  color: white;\n  font-size: 78px;\n  line-height: 93.84px;\n}\n\n.description {\n  font-size: 1.2rem;\n  color: white;\n  margin-top: 32px;\n  font-style: italic;\n}/*# sourceMappingURL=heroSection.module.css.map */"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;AAIA;;;;;;;AAOA"}},
-    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/heroSection.module.css"],"sourcesContent":[".hero {\n  background-color: black;\n  display: flex;\n  padding: 30px;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n}\n\n.textContainer {\n  max-width: 738px;\n}\n\n.title {\n  font-weight: 700;\n  color: white;\n  font-size: 78px;\n  line-height: 93.84px;\n}\n\n.description {\n  font-size: 1.2rem;\n  color: white;\n  margin-top: 32px;\n  letter-spacing: 3.5px;\n  font-style: italic;\n}/*# sourceMappingURL=heroSection.module.css.map */"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;AAIA;;;;;;;AAOA"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
 }
