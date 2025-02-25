@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import styles from "@/app/styles/componentStyles/skills.module.scss";
+import { useTranslations } from "next-intl";
 
 const skills = [
   "JavaScript",
@@ -19,7 +20,7 @@ const skills = [
 
 export default function Skills() {
   const [positions, setPositions] = useState<{ x: number; y: number }[]>([]);
-
+  const t = useTranslations("translation.myStack");
 
   useEffect(() => {
     const newPositions = skills.map((_, index) => {
@@ -33,7 +34,7 @@ export default function Skills() {
 
   return (
     <div>
-      <h2 className={styles.header}>Основной стек</h2>
+      <h2 className={styles.header}>{t("title")}</h2>
       <section className={styles.container}>
         <motion.div
           className={styles.circle}

@@ -14,6 +14,9 @@
 		"title": "Work Experience",
 		"subtitle": "Companies I have worked at"
 	  },
+	  "myStack": {
+		"title": "Basic Stack"
+	},
 	  "worksCarousel": {
 		"title": "More Works",
 		"demo": "Demo"

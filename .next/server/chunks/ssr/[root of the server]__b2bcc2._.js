@@ -56,7 +56,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$server$2f$react$2d$server$2f$getRequestConfig$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getRequestConfig$3e$__["getRequestConfig"])(async ()=>{
     const cookieStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cookies"])();
-    const locale = (await cookieStore).get("locale")?.value || "en"; // Берем язык из cookies или ставим "en" по умолчанию
+    const locale = (await cookieStore).get("locale")?.value || "ru"; // Берем язык из cookies или ставим "en" по умолчанию
     return {
         locale,
         messages: (await __turbopack_module_context__({

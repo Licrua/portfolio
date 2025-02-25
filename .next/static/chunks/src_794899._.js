@@ -31,6 +31,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@hookform/resolvers/zod/dist/zod.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/styles/componentStyles/feedbackForm.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next-intl/dist/index.react-client.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/zod/lib/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
 ;
@@ -41,33 +42,32 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-const schema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].object({
-    name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().min(2, "Имя должно содержать минимум 2 символа"),
-    email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().email("Введите корректный email"),
-    story: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().min(10, "Сообщение должно содержать минимум 10 символов")
-});
+;
 function FeedbackForm() {
     _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])("translation.feedbackForm");
+    const schema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].object({
+        name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().min(2, t("validation.nameMin")),
+        email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().email(t("validation.emailInvalid")),
+        story: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["z"].string().min(10, t("validation.messageMin"))
+    });
     const { register, handleSubmit, formState: { errors, isSubmitting } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"])({
         resolver: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["zodResolver"])(schema)
     });
     const onSubmit = async (data)=>{
         const formData = new FormData();
-        console.log("formData", formData);
         formData.append("access_key", "89367206-309f-4284-893f-051c3e5b6f1f");
         formData.append("name", data.name);
         formData.append("email", data.email);
-        formData.append("message", data.message);
+        formData.append("message", data.story);
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             body: formData
         });
         if (response.ok) {
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])('Good Job!', {
-                icon: '👏'
-            });
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success(t("success"));
         } else {
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("This didn't work.");
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error(t("error"));
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -77,7 +77,6 @@ function FeedbackForm() {
                 lineNumber: 48,
                 columnNumber: 7
             }, this),
-            " ",
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].feedback,
                 children: [
@@ -86,7 +85,7 @@ function FeedbackForm() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].title,
-                                children: "Обратная форма"
+                                children: t("title")
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
                                 lineNumber: 51,
@@ -94,7 +93,7 @@ function FeedbackForm() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text,
-                                children: "Остались вопросы? Или хотите заказать работу?"
+                                children: t("description")
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
                                 lineNumber: 52,
@@ -102,7 +101,7 @@ function FeedbackForm() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].text,
-                                children: " - Заполните форму!"
+                                children: t("note")
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
                                 lineNumber: 53,
@@ -126,7 +125,7 @@ function FeedbackForm() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             htmlFor: "name",
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
-                                            children: "Имя"
+                                            children: t("name")
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
                                             lineNumber: 58,
@@ -139,7 +138,7 @@ function FeedbackForm() {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, this),
                                         errors.name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -147,7 +146,7 @@ function FeedbackForm() {
                                             children: errors.name.message
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 60,
                                             columnNumber: 31
                                         }, this)
                                     ]
@@ -162,10 +161,10 @@ function FeedbackForm() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             htmlFor: "email",
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
-                                            children: "Почта"
+                                            children: t("email")
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -175,7 +174,7 @@ function FeedbackForm() {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         errors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -183,13 +182,13 @@ function FeedbackForm() {
                                             children: errors.email.message
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 65,
                                             columnNumber: 32
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -198,10 +197,10 @@ function FeedbackForm() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             htmlFor: "story",
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
-                                            children: "Сообщение"
+                                            children: t("message")
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -211,7 +210,7 @@ function FeedbackForm() {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].textarea
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 69,
                                             columnNumber: 15
                                         }, this),
                                         errors.story && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -219,13 +218,13 @@ function FeedbackForm() {
                                             children: errors.story.message
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 70,
                                             columnNumber: 32
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -234,15 +233,15 @@ function FeedbackForm() {
                                     disabled: isSubmitting,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$feedbackForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].span,
-                                        children: isSubmitting ? "Отправка..." : "Отправить"
+                                        children: isSubmitting ? t("submitting") : t("submit")
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/main/FeedbackForm.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -265,8 +264,9 @@ function FeedbackForm() {
         ]
     }, void 0, true);
 }
-_s(FeedbackForm, "ujviwcZw0wO8jczPL9RrISP/4OE=", false, function() {
+_s(FeedbackForm, "hO2ULAYmvXu2fvYFLNulrize3ts=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"]
     ];
 });
@@ -299,10 +299,12 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$skills$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/styles/componentStyles/skills.module.scss.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next-intl/dist/index.react-client.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -321,6 +323,7 @@ const skills = [
 function Skills() {
     _s();
     const [positions, setPositions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])("translation.myStack");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Skills.useEffect": ()=>{
             const newPositions = skills.map({
@@ -341,10 +344,10 @@ function Skills() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$skills$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header,
-                children: "Основной стек"
+                children: t("title")
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/Skills.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -372,28 +375,32 @@ function Skills() {
                             children: skill
                         }, skill, false, {
                             fileName: "[project]/src/app/components/main/Skills.tsx",
-                            lineNumber: 47,
+                            lineNumber: 48,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/main/Skills.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/Skills.tsx",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/main/Skills.tsx",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
-_s(Skills, "3LkfiWGtBEM8hKuM1fZoE6OzM7U=");
+_s(Skills, "KFUxfiFN1noqTW3clOdGxv2DGB8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = Skills;
 var _c;
 __turbopack_refresh__.register(_c, "Skills");
@@ -462,9 +469,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_import__("[project]/src/app/styles/componentStyles/worksCarousel.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$carouselItems$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/data/carouselItems.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next-intl/dist/index.react-client.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$navigation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Navigation$3e$__ = __turbopack_import__("[project]/node_modules/swiper/modules/navigation.mjs [app-client] (ecmascript) <export default as Navigation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$pagination$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pagination$3e$__ = __turbopack_import__("[project]/node_modules/swiper/modules/pagination.mjs [app-client] (ecmascript) <export default as Pagination>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__ = __turbopack_import__("[project]/node_modules/swiper/modules/autoplay.mjs [app-client] (ecmascript) <export default as Autoplay>");
+;
+var _s = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
@@ -476,16 +486,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$mo
 ;
 ;
 function WorksCarousel() {
+    _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])("translation.worksCarousel");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].container,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header,
-                children: "Еще работы"
+                children: t("title")
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                lineNumber: 15,
-                columnNumber: 3
+                lineNumber: 18,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].slider,
@@ -513,41 +525,46 @@ function WorksCarousel() {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].image
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                                    lineNumber: 28,
-                                    columnNumber: 13
+                                    lineNumber: 31,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].link,
                                     href: src.link,
-                                    children: "Демонстрация"
+                                    children: t("demo")
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 4
+                                    lineNumber: 32,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                            lineNumber: 27,
-                            columnNumber: 11
+                            lineNumber: 30,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                    lineNumber: 17,
-                    columnNumber: 7
+                    lineNumber: 20,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-                lineNumber: 16,
-                columnNumber: 5
+                lineNumber: 19,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/main/WorksCarousel.tsx",
-        lineNumber: 14,
-        columnNumber: 2
+        lineNumber: 17,
+        columnNumber: 5
     }, this);
 }
+_s(WorksCarousel, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$index$2e$react$2d$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = WorksCarousel;
 var _c;
 __turbopack_refresh__.register(_c, "WorksCarousel");

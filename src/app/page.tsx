@@ -9,12 +9,12 @@ import Main from "./components/main/Main";
 import Skills from "./components/main/Skills";
 import WorksCarousel from "./components/main/WorksCarousel";
 import WorksSection from "./components/main/WorksSection";
+import LocaleSwitcher from "./components/generic/LocaleSwitcher";
 
 export default function Home() {
-  const t = useTranslations("translation.nav");
   return (
     <>
-	<h1>{t('works')}</h1>
+      <LocaleSwitcher />
       <Header />
       <Main>
         <HeroSection />

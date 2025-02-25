@@ -306,6 +306,7 @@ const skills = [
 ];
 function Skills() {
     const [positions, setPositions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const t = useTranslations("translation.jobSection");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const newPositions = skills.map((_, index)=>{
             const angle = index / skills.length * 2 * Math.PI; // Вычисляем угол
@@ -325,7 +326,7 @@ function Skills() {
                 children: "Основной стек"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/Skills.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -353,24 +354,24 @@ function Skills() {
                             children: skill
                         }, skill, false, {
                             fileName: "[project]/src/app/components/main/Skills.tsx",
-                            lineNumber: 47,
+                            lineNumber: 48,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/main/Skills.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/Skills.tsx",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/main/Skills.tsx",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
