@@ -6,7 +6,7 @@
 
 .localeSwitcher-module__0-sMda__toggle {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
   padding: 5px;
 }
@@ -230,7 +230,7 @@
 .worksCarousel-module__UQ2BiW__header {
   background-color: #1d1f22;
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding-top: 10px;
   color: #fff;
   text-align: center;

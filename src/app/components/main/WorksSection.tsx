@@ -8,7 +8,7 @@ function WorksSection() {
   const projects = useTranslations("translation"); // Гарантируем, что `projects` всегда массив
 	
   return (
-    <section className={styles.section}>
+    <section id="works" className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.header}>{t("title")}</h2>
         <h3 className={styles.projects}>{t("projects")}</h3>

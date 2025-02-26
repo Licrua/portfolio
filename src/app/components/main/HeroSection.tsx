@@ -1,6 +1,5 @@
 import styles from "@/app/styles/componentStyles/heroSection.module.css";
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from "../generic/LocaleSwitcher";
 
 function HeroSection() {
   const t = useTranslations("translation.heroSection");

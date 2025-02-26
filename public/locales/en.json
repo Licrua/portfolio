@@ -2,10 +2,10 @@
 	"translation": {
 	"nav": {
 		"items": [
-		  { "href": "/exp", "label": "Experience" },
-		  { "href": "/works", "label": "Works" },
-		  { "href": "/achievements", "label": "Achievements" },
-		  { "href": "/contact", "label": "Contact", "active": true }
+		  { "href": "#exp", "label": "Experience" },
+		  { "href": "#works", "label": "Works" },
+		  { "href": "#skills", "label": "Skills" },
+		  { "href": "#contact", "label": "Contact", "active": true }
 		]
 	  },
 	  "heroSection": {

@@ -9,8 +9,8 @@ function JobSection() {
 
   return (
     <section className={styles.jobSection}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{t("title")}</h2>
+      <div id="exp" className={styles.header}>
+        <h2  className={styles.title}>{t("title")}</h2>
         <p className={styles.subtitle}>{t("subtitle")}</p>
       </div>
       <div className={styles.jobs}>

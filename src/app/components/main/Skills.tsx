@@ -33,7 +33,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <div>
+    <div id="skills">
       <h2 className={styles.header}>{t("title")}</h2>
       <section className={styles.container}>
         <motion.div

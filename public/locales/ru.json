@@ -2,10 +2,10 @@
   "translation": {
 	"nav": {
 		"items": [
-		  { "href": "/exp", "label": "Опыт" },
-		  { "href": "/works", "label": "Работы" },
-		  { "href": "/achievements", "label": "Награды" },
-		  { "href": "/contact", "label": "Контакты", "active": true }
+		  { "href": "#exp", "label": "Опыт" },
+		  { "href": "#works", "label": "Работы" },
+		  { "href": "#skills", "label": "Навыки" },
+		  { "href": "#contact", "label": "Контакты", "active": true }
 		]
 	  },
     "heroSection": {
