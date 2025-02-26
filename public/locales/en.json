@@ -1,10 +1,12 @@
 {
 	"translation": {
-	  "nav": {
-		"experience": "Experience",
-		"works": "Works",
-		"achievements": "Achievements",
-		"contact": "Contacts"
+	"nav": {
+		"items": [
+		  { "href": "/exp", "label": "Experience" },
+		  { "href": "/works", "label": "Works" },
+		  { "href": "/achievements", "label": "Achievements" },
+		  { "href": "/contact", "label": "Contact", "active": true }
+		]
 	  },
 	  "heroSection": {
 		"title": "I am a Frontend Developer — Licrua",

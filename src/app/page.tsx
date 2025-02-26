@@ -9,12 +9,11 @@ import Main from "./components/main/Main";
 import Skills from "./components/main/Skills";
 import WorksCarousel from "./components/main/WorksCarousel";
 import WorksSection from "./components/main/WorksSection";
-import LocaleSwitcher from "./components/generic/LocaleSwitcher";
+
 
 export default function Home() {
   return (
     <>
-      <LocaleSwitcher />
       <Header />
       <Main>
         <HeroSection />
