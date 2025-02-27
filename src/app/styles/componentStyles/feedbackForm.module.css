@@ -9,6 +9,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -77,4 +78,42 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .feedback {
+    padding: 10px;
+  }
+  .header {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  .text {
+    max-width: 300px;
+    text-align: center;
+  }
+  .input {
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .textarea {
+    max-width: 300px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+  .button {
+    min-width: auto;
+  }
+  .formContainer {
+    justify-content: left;
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=feedbackForm.module.css.map */

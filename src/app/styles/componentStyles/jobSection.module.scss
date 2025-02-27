@@ -82,3 +82,13 @@
 .tasks li {
 	margin-bottom: 8px;
 }
+
+
+@media (max-width: 768px) {
+	.header {
+		padding: 0 40px;
+	}
+	.jobs {
+		padding: 0px;
+	}
+}

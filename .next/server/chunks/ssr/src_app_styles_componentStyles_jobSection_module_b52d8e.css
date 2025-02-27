@@ -81,4 +81,14 @@
   margin-bottom: 8px;
 }
 
+@media (width <= 768px) {
+  .jobSection-module__KGTNVq__header {
+    padding: 0 40px;
+  }
+
+  .jobSection-module__KGTNVq__jobs {
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_componentStyles_jobSection_module_b52d8e.css.map*/

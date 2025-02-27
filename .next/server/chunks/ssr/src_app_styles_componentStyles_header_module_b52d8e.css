@@ -11,4 +11,10 @@
   border-bottom: 1px solid gray;
 }
 
+@media (width >= 320px) and (width <= 768px) {
+  .header-module__ieI34G__header {
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_componentStyles_header_module_b52d8e.css.map*/

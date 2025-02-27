@@ -10,6 +10,7 @@
 .feedbackForm-module__kk4LZG__header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -78,6 +79,52 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
+}
+
+@media (width <= 768px) {
+  .feedbackForm-module__kk4LZG__title {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .feedbackForm-module__kk4LZG__feedback {
+    padding: 10px;
+  }
+
+  .feedbackForm-module__kk4LZG__header {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .feedbackForm-module__kk4LZG__text {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .feedbackForm-module__kk4LZG__input {
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .feedbackForm-module__kk4LZG__textarea {
+    max-width: 300px;
+  }
+
+  .feedbackForm-module__kk4LZG__form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+
+  .feedbackForm-module__kk4LZG__button {
+    min-width: auto;
+  }
+
+  .feedbackForm-module__kk4LZG__formContainer {
+    justify-content: left;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=src_app_styles_componentStyles_feedbackForm_module_b52d8e.css.map*/

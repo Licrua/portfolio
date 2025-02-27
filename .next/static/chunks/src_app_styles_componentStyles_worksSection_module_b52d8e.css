@@ -102,4 +102,10 @@
   color: gray;
 }
 
+@media (width <= 768px) {
+  .worksSection-module__cZw-gG__section {
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_componentStyles_worksSection_module_b52d8e.css.map*/

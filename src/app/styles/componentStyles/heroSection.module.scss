@@ -7,7 +7,6 @@
 	padding: 30px;
 	justify-content: space-between;
 	align-items: center;
-	// max-height: 900px;
 	width: 100%;
 }
 
@@ -16,6 +15,9 @@
 // }
 
 
+// .heroImage {
+// 	width: 50px;
+// }
 
 .textContainer {
 	max-width: 738px;
@@ -35,4 +37,22 @@
 	margin-top: 32px;
 	letter-spacing: 3.5px;
 	font-style: italic;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+	}
+	.heroImage {
+			max-width: 450px;
+		}
+	.title {
+		margin-top: 20px;
+		font-size: 30px;
+		line-height: 40.84px;
+	}	
+	.description {
+		margin-top: 10px;
+	}
 }

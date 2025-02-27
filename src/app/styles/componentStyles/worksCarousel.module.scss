@@ -59,5 +59,15 @@
 	 background: black;
   }
 
+  @media (max-width: 768px) {
+	.image {
+		object-fit: contain;
+		height: 400px;
+	}
+	.link {
+		transform: translate(-50%, -70%);
+	}
+  }
+
 
   

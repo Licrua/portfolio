@@ -9,3 +9,9 @@
 	padding: 50px;
 	border-bottom: 1px solid grey;
   }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+	 .header {
+		padding: 10px;
+	 }
+  }

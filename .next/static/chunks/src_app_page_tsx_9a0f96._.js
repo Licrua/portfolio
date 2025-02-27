@@ -10,8 +10,8 @@
     "static/chunks/node_modules_zod_lib_index_mjs_ee760a._.js",
     "static/chunks/node_modules_framer-motion_dist_es_ea6903._.js",
     "static/chunks/node_modules_swiper_9a8a70._.js",
-    "static/chunks/node_modules_563c54._.js",
-    "static/chunks/src_3dc9f2._.js"
+    "static/chunks/node_modules_94a011._.js",
+    "static/chunks/src_17df89._.js"
   ],
   "source": "dynamic"
 });

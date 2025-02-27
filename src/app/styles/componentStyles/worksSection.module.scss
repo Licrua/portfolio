@@ -102,3 +102,9 @@
 .viewInfo:hover {
 	color: grey;
 }
+
+@media (max-width: 768px) {
+	.section {
+		padding: 10px;
+	}
+}

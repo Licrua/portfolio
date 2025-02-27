@@ -60,4 +60,16 @@
   background: #000;
 }
 
+@media (width <= 768px) {
+  .worksCarousel-module__UQ2BiW__image {
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 400px;
+  }
+
+  .worksCarousel-module__UQ2BiW__link {
+    transform: translate(-50%, -70%);
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_componentStyles_worksCarousel_module_b52d8e.css.map*/
