@@ -251,7 +251,7 @@
   display: grid;
   padding: 50px;
   border: none;
-  grid-template-columns: repeat(auto-fit, minmax(526px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .feedbackForm-module__kk4LZG__header {
@@ -264,7 +264,8 @@
 .feedbackForm-module__kk4LZG__formContainer {
   display: flex;
   justify-content: space-around;
-  max-width: 526px;
+  padding-right: 20px;
+  max-width: 100%;
   max-height: 491px;
 }
 
@@ -292,8 +293,9 @@
   margin-bottom: 8px;
 }
 
-.feedbackForm-module__kk4LZG__input {
-  min-width: 526px;
+.feedbackForm-module__kk4LZG__input, .feedbackForm-module__kk4LZG__textarea {
+  max-width: 526px;
+  min-width: 300px;
   min-height: 50px;
   background-color: #181823;
   margin-bottom: 20px;
@@ -316,7 +318,8 @@
 }
 
 .feedbackForm-module__kk4LZG__button {
-  min-width: 526px;
+  width: 100%;
+  max-width: 526px;
   min-height: 75px;
   background: #5221e6;
   margin-top: 40px;
@@ -332,45 +335,44 @@
   .feedbackForm-module__kk4LZG__title {
     font-size: 30px;
     margin-left: 10px;
+    text-align: center;
   }
 
   .feedbackForm-module__kk4LZG__feedback {
-    padding: 10px;
+    padding: 20px;
   }
 
   .feedbackForm-module__kk4LZG__header {
     gap: 10px;
+    margin-right: 15px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .feedbackForm-module__kk4LZG__text {
-    max-width: 300px;
     text-align: center;
   }
 
-  .feedbackForm-module__kk4LZG__input {
-    min-width: 200px;
-    max-width: 300px;
+  .feedbackForm-module__kk4LZG__input, .feedbackForm-module__kk4LZG__textarea {
+    width: 100%;
   }
 
-  .feedbackForm-module__kk4LZG__textarea {
-    max-width: 300px;
+  .feedbackForm-module__kk4LZG__button {
+    width: 100%;
   }
 
   .feedbackForm-module__kk4LZG__form {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
   }
 
-  .feedbackForm-module__kk4LZG__button {
-    min-width: auto;
-  }
-
   .feedbackForm-module__kk4LZG__formContainer {
-    justify-content: left;
-    margin-left: 20px;
+    justify-content: center;
+    margin-left: 0;
   }
 }
 
@@ -423,6 +425,14 @@
 
   .heroSection-module__mAwF6G__description {
     margin-top: 10px;
+  }
+}
+
+@media (width >= 769px) and (width <= 1200px) {
+  .heroSection-module__mAwF6G__hero {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
   }
 }
 

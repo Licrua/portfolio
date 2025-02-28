@@ -145,6 +145,14 @@
   }
 }
 
+@media (width >= 769px) and (width <= 1200px) {
+  .heroSection-module__mAwF6G__hero {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+
 
 /* [project]/src/app/styles/componentStyles/jobSection.module.css [app-client] (css) */
 .jobSection-module__KGTNVq__header {

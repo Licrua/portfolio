@@ -56,3 +56,11 @@
 		margin-top: 10px;
 	}
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+	.hero {
+		display: flex;
+		margin-top: 10px;
+		flex-direction: column;
+	}
+}

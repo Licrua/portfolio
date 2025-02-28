@@ -49,4 +49,12 @@
   }
 }
 
+@media (width >= 769px) and (width <= 1200px) {
+  .heroSection-module__mAwF6G__hero {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=src_app_styles_componentStyles_heroSection_module_b52d8e.css.map*/

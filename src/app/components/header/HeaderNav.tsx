@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion"; // Добавляем
 import styles from "@/app/styles/componentStyles/headerNav.module.css";
 
 export function HeaderNav() {
@@ -12,22 +13,18 @@ export function HeaderNav() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      console.log("event", menuRef.current);
-
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target as Node) &&
         burgerRef.current &&
         !burgerRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false); // Закрываем меню
+        setIsOpen(false);
       }
     };
 
-    // Добавляем обработчик событий
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Убираем обработчик при размонтировании компонента
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -39,7 +36,7 @@ export function HeaderNav() {
       <div
         className={styles.burger}
         onClick={() => setIsOpen(!isOpen)}
-        ref={burgerRef} // Привязываем к бургер-иконке
+        ref={burgerRef}
       >
         <span></span>
         <span></span>
@@ -47,37 +44,63 @@ export function HeaderNav() {
       </div>
 
       {/* Десктоп-меню */}
-      <ul className={styles.list}>
-        {t
-          .raw("items")
-          .map(({ href, label, active }: { href: string; label: string; active?: boolean }) => (
-            <li key={href} className={styles.item}>
-              <a className={`${styles.link} ${active ? styles.active : ""}`} href={href}>
-                {label}
-              </a>
-            </li>
-          ))}
-      </ul>
+	  <motion.ul
+  className={styles.list}
+  initial={{ opacity: 0, y: -10 }} // Меню появляется сверху
+  animate={{ opacity: 1, y: 0 }} // Анимация появления
+  transition={{ duration: 0.5, ease: "easeOut" }}
+>
+  {t
+    .raw("items")
+    .map(({ href, label, active }: { href: string; label: string; active?: boolean }, index: number) => (
+      <motion.li
+        key={href}
+        className={styles.item}
+        initial={{ opacity: 0, y: -10 }} // Каждый пункт падает сверху
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ delay: index * 0.1 }} // Задержка для плавности
+        whileHover={{ scale: 1.1 }} // Эффект увеличения при наведении
+      >
+        <a className={`${styles.link} ${active ? styles.active : ""}`} href={href}>
+          {label}
+        </a>
+      </motion.li>
+    ))}
+</motion.ul>
 
-      {/* Мобильное меню */}
-      {isOpen && (
-        <ul className={styles.mobileMenu} ref={menuRef}>
-          {" "}
-          {t
-            .raw("items")
-            .map(({ href, label, active }: { href: string; label: string; active?: boolean }) => (
-              <li key={href} className={styles.item}>
-                <a
-                  className={`${styles.link} ${active ? styles.active : ""}`}
-                  href={href}
-                  onClick={() => setIsOpen(false)} // Закрываем меню при клике
+     
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            className={styles.mobileMenu}
+            ref={menuRef}
+            initial={{ scale: 0.9, opacity: 0 }} // Начальное состояние
+            animate={{ scale: 1, opacity: 1 }} // Анимация появления
+            exit={{ scale: 0.9, opacity: 0 }} // Анимация исчезновения
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            {t
+              .raw("items")
+              .map(({ href, label, active }: { href: string; label: string; active?: boolean }, index: number) => (
+                <motion.li
+                  key={href}
+                  className={styles.item}
+                  initial={{ opacity: 0, y: -10 }} // Элементы падают сверху
+                  animate={{ opacity: 1, y: 0 }} 
+                  transition={{ delay: index * 0.1 }} // Задержка между элементами
                 >
-                  {label}
-                </a>
-              </li>
-            ))}
-        </ul>
-      )}
+                  <a
+                    className={`${styles.link} ${active ? styles.active : ""}`}
+                    href={href}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {label}
+                  </a>
+                </motion.li>
+              ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
