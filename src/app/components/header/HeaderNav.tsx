@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion"; // Добавляем
-import styles from "@/app/styles/componentStyles/headerNav.module.css";
+import styles from "@/app/styles/componentStyles/header/headerNav.module.css";
 
 export function HeaderNav() {
   const t = useTranslations("translation.nav");
@@ -10,6 +10,8 @@ export function HeaderNav() {
 
   const menuRef = useRef<HTMLUListElement | null>(null);
   const burgerRef = useRef<HTMLDivElement | null>(null);
+
+
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -33,6 +35,7 @@ export function HeaderNav() {
   return (
     <nav className={styles.nav}>
       {/* Бургер-иконка */}
+
       <div
         className={styles.burger}
         onClick={() => setIsOpen(!isOpen)}
@@ -41,34 +44,38 @@ export function HeaderNav() {
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> 
 
       {/* Десктоп-меню */}
-	  <motion.ul
-  className={styles.list}
-  initial={{ opacity: 0, y: -10 }} // Меню появляется сверху
-  animate={{ opacity: 1, y: 0 }} // Анимация появления
-  transition={{ duration: 0.5, ease: "easeOut" }}
->
-  {t
-    .raw("items")
-    .map(({ href, label, active }: { href: string; label: string; active?: boolean }, index: number) => (
-      <motion.li
-        key={href}
-        className={styles.item}
-        initial={{ opacity: 0, y: -10 }} // Каждый пункт падает сверху
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ delay: index * 0.1 }} // Задержка для плавности
-        whileHover={{ scale: 1.1 }} // Эффект увеличения при наведении
+      <motion.ul
+        className={styles.list}
+        initial={{ opacity: 0, y: -10 }} // Меню появляется сверху
+        animate={{ opacity: 1, y: 0 }} // Анимация появления
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <a className={`${styles.link} ${active ? styles.active : ""}`} href={href}>
-          {label}
-        </a>
-      </motion.li>
-    ))}
-</motion.ul>
+        {t
+          .raw("items")
+          .map(
+            (
+              { href, label, active }: { href: string; label: string; active?: boolean },
+              index: number,
+            ) => (
+              <motion.li
+                key={href}
+                className={styles.item}
+                initial={{ opacity: 0, y: -10 }} // Каждый пункт падает сверху
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }} // Задержка для плавности
+                whileHover={{ scale: 1.1 }} // Эффект увеличения при наведении
+              >
+                <a className={`${styles.link} ${active ? styles.active : ""}`} href={href}>
+                  {label}
+                </a>
+              </motion.li>
+            ),
+          )}
+      </motion.ul>
 
-     
       <AnimatePresence>
         {isOpen && (
           <motion.ul
@@ -81,23 +88,28 @@ export function HeaderNav() {
           >
             {t
               .raw("items")
-              .map(({ href, label, active }: { href: string; label: string; active?: boolean }, index: number) => (
-                <motion.li
-                  key={href}
-                  className={styles.item}
-                  initial={{ opacity: 0, y: -10 }} // Элементы падают сверху
-                  animate={{ opacity: 1, y: 0 }} 
-                  transition={{ delay: index * 0.1 }} // Задержка между элементами
-                >
-                  <a
-                    className={`${styles.link} ${active ? styles.active : ""}`}
-                    href={href}
-                    onClick={() => setIsOpen(false)}
+              .map(
+                (
+                  { href, label, active }: { href: string; label: string; active?: boolean },
+                  index: number,
+                ) => (
+                  <motion.li
+                    key={href}
+                    className={styles.item}
+                    initial={{ opacity: 0, y: -10 }} // Элементы падают сверху
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }} // Задержка между элементами
                   >
-                    {label}
-                  </a>
-                </motion.li>
-              ))}
+                    <a
+                      className={`${styles.link} ${active ? styles.active : ""}`}
+                      href={href}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {label}
+                    </a>
+                  </motion.li>
+                ),
+              )}
           </motion.ul>
         )}
       </AnimatePresence>

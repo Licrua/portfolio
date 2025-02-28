@@ -1,4 +1,4 @@
-import styles from "@/app/styles/componentStyles/divider.module.css";
+import styles from "@/app/styles/componentStyles/general/divider.module.css";
 
 function Divider() {
 	return ( 

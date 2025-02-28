@@ -1,6 +1,6 @@
 import socialLinks from "@/data/socialLinks";
 import Image from "next/image";
-import styles from "@/app/styles/componentStyles/footerSocialLinks.module.css";
+import styles from "@/app/styles/componentStyles/footer/footerSocialLinks.module.css";
 
 export default function FooterSocialLinks() {
   return (

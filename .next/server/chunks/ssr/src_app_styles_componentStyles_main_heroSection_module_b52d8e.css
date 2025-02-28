@@ -1,0 +1,68 @@
+/* [project]/src/app/styles/componentStyles/main/heroSection.module.css [app-client] (css) */
+.heroSection-module__Jo2J-G__hero {
+  background-color: #000;
+  position: relative;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heroSection-module__Jo2J-G__lamp {
+  max-width: 250px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.heroSection-module__Jo2J-G__textContainer {
+  max-width: 738px;
+}
+
+.heroSection-module__Jo2J-G__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 78px;
+  line-height: 93.84px;
+}
+
+.heroSection-module__Jo2J-G__description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  margin-top: 32px;
+  letter-spacing: 3.5px;
+  font-style: italic;
+}
+
+@media (width <= 768px) {
+  .heroSection-module__Jo2J-G__hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSection-module__Jo2J-G__heroImage {
+    max-width: 450px;
+  }
+
+  .heroSection-module__Jo2J-G__title {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 40.84px;
+  }
+
+  .heroSection-module__Jo2J-G__description {
+    margin-top: 10px;
+  }
+}
+
+@media (width >= 769px) and (width <= 1200px) {
+  .heroSection-module__Jo2J-G__hero {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_main_heroSection_module_b52d8e.css.map*/

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/app/styles/componentStyles/headerLogo.module.css";
+import styles from "@/app/styles/componentStyles/header/headerLogo.module.css";
 import { motion } from "framer-motion";
 
 function HeaderLogo() {
@@ -18,9 +18,16 @@ function HeaderLogo() {
         className={styles.logoImage}
         src="/images/logo.png"
         alt="logo"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.5 }}
+        whileInView={{
+          scale: 1,
+          skew: [0, 8, -8, 4, -4, 0],
+        }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+        viewport={{ once: true }} // Анимация сработает один раз при попадании в область видимости
       />
     </motion.div>
   );

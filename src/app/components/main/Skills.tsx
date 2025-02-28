@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import styles from "@/app/styles/componentStyles/skills.module.scss";
+import styles from "@/app/styles/componentStyles/main/skills.module.css";
 import { useTranslations } from "next-intl";
 
 const skills = [

@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import styles from "@/app/styles/componentStyles/worksCarousel.module.css";
+import styles from "@/app/styles/componentStyles/main/worksCarousel.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

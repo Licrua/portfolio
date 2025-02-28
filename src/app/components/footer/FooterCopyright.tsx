@@ -1,4 +1,4 @@
-import styles from "@/app/styles/componentStyles/footerCopyright.module.scss";
+import styles from "@/app/styles/componentStyles/footer/footerCopyright.module.css";
 import { useTranslations } from "next-intl";
 function FooterCopyright() {
   const t = useTranslations("translation");

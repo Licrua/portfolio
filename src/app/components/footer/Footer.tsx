@@ -2,7 +2,7 @@ import FooterCopyright from "./FooterCopyright";
 import FooterLogo from "./FooterLogo";
 import FooterSlogan from "./FooterSlogan";
 import FooterSocialLinks from "./FooterSocialLinks";
-import styles from "@/app/styles/componentStyles/footer.module.css";
+import styles from "@/app/styles/componentStyles/footer/footer.module.css";
 
 function Footer() {
   return (

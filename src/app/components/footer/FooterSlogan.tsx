@@ -1,4 +1,4 @@
-import styles from "@/app/styles/componentStyles/footerSlogan.module.css";
+import styles from "@/app/styles/componentStyles/footer/footerSlogan.module.css";
 import { useTranslations } from "next-intl";
 function FooterSlogan() {
 	  const t = useTranslations("translation");

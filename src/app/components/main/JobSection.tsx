@@ -1,34 +1,83 @@
-import styles from "@/app/styles/componentStyles/jobSection.module.css";
+"use client";
+import styles from "@/app/styles/componentStyles/main/jobSection.module.css";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { letterVariants, techVariants } from "@/utils/motionVariants";
 
 function JobSection() {
   const t = useTranslations("translation.jobSection");
   const jobs = useTranslations("translation");
 
-  
+
 
   return (
     <section className={styles.jobSection}>
       <div id="exp" className={styles.header}>
-        <h2  className={styles.title}>{t("title")}</h2>
-        <p className={styles.subtitle}>{t("subtitle")}</p>
+        {/* Заголовок с анимацией букв */}
+        <motion.h2 
+          className={styles.title} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }}
+        >
+          {t("title").split("").map((char, index) => (
+            <motion.span key={index} custom={index} variants={letterVariants}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.h2>
+
+        {/* Подзаголовок с анимацией букв */}
+        <motion.p 
+          className={styles.subtitle} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }}
+        >
+          {t("subtitle").split("").map((char, index) => (
+            <motion.span key={index} custom={index} variants={letterVariants}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.p>
       </div>
-      <div className={styles.jobs}>
-        {jobs.raw("jobs").map((job: any) => (
-          <div key={job.id} className={styles.job}>
+
+      {/* Карточки с опытом работы */}
+      <motion.div className={styles.jobs} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+        {jobs.raw("jobs").map((job: any, index: number) => (
+          <motion.div 
+            key={job.id} 
+            className={styles.job} 
+            custom={index} 
+            variants={techVariants} 
+            initial="hidden" 
+            whileInView="visible" 
+            viewport={{ once: true }}
+          >
             <div className={styles.index}>{job.id}</div>
             <div className={styles.info}>
               <h3 className={styles.company}>{job.company}</h3>
               <p className={styles.position}>{job.position}</p>
             </div>
+
+            {/* Анимированные элементы списка задач */}
             <ul className={styles.tasks}>
-              {job.tasks.map((task: string, index: number) => (
-                <li key={index}>{task}</li>
+              {job.tasks.map((task: string, taskIndex: number) => (
+                <motion.li 
+                  key={taskIndex} 
+                  custom={taskIndex} 
+                  variants={techVariants} 
+                  initial="hidden" 
+                  whileInView="visible" 
+                  viewport={{ once: true }}
+                >
+                  {task}
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
