@@ -4,45 +4,24 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { letterVariants, techVariants } from "@/utils/motionVariants";
 import Jobs from "@/types/jobs";
+import JobList from "./JobList";
+import JobSubtitle from "./JobSubtitle";
+import JobTitle from "./JobTitle";
 
 function JobSection() {
   const t = useTranslations("translation.jobSection");
   const jobs = useTranslations("translation");
+  console.log("dasda", jobs.raw("jobs"));
 
   return (
     <section className={styles.jobSection}>
       <div id="exp" className={styles.header}>
         {/* Заголовок с анимацией букв */}
-        <motion.h2
-          className={styles.title}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {t("title")
-            .split("")
-            .map((char, index) => (
-              <motion.span key={index} custom={index} variants={letterVariants}>
-                {char}
-              </motion.span>
-            ))}
-        </motion.h2>
+
+        <JobTitle t={t} />
 
         {/* Подзаголовок с анимацией букв */}
-        <motion.p
-          className={styles.subtitle}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {t("subtitle")
-            .split("")
-            .map((char, index) => (
-              <motion.span key={index} custom={index} variants={letterVariants}>
-                {char}
-              </motion.span>
-            ))}
-        </motion.p>
+        <JobSubtitle t={t} />
       </div>
 
       {/* Карточки с опытом работы */}
@@ -69,20 +48,7 @@ function JobSection() {
             </div>
 
             {/* Анимированные элементы списка задач */}
-            <ul className={styles.tasks}>
-              {job.tasks.map((task: string, taskIndex: number) => (
-                <motion.li
-                  key={taskIndex}
-                  custom={taskIndex}
-                  variants={techVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  {task}
-                </motion.li>
-              ))}
-            </ul>
+            <JobList jobs={job} />
           </motion.div>
         ))}
       </motion.div>

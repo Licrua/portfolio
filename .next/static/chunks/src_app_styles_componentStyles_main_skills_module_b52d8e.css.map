@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/main/skills.module.css"],"sourcesContent":[".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: black;\n  padding: 40px;\n  position: relative;\n}\n\n.header {\n  background: black;\n  color: white;\n  text-align: center;\n  font-size: 30px;\n  padding: 20px;\n}\n\n.circle {\n  min-width: 250px;\n  min-height: 250px;\n  border-radius: 50%;\n  border: 2px solid #00bcd4;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.skill {\n  position: absolute;\n  background: #00bcd4;\n  color: white;\n  padding: 6px 12px;\n  border-radius: 20px;\n  font-size: 14px;\n  white-space: nowrap;\n  transition: transform 0.2s ease;\n}/*# sourceMappingURL=skills.module.css.map */"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;;;AAQA;;;;;;;;;;;AAWA"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

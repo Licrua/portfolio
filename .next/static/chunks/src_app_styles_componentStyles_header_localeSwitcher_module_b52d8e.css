@@ -1,0 +1,61 @@
+/* [project]/src/app/styles/componentStyles/header/localeSwitcher.module.css [app-client] (css) */
+.localeSwitcher-module__iNXvXG__switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.localeSwitcher-module__iNXvXG__toggle {
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.localeSwitcher-module__iNXvXG__toggle img {
+  width: 40px;
+  height: 40px;
+  transition: transform .3s;
+}
+
+.localeSwitcher-module__iNXvXG__toggle:hover img {
+  transform: scale(1.1);
+}
+
+.localeSwitcher-module__iNXvXG__menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: gray;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
+  padding: 5px 0;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.localeSwitcher-module__iNXvXG__menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background .2s;
+}
+
+.localeSwitcher-module__iNXvXG__menu button:hover {
+  background: #f0f0f0;
+}
+
+.localeSwitcher-module__iNXvXG__menu img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_header_localeSwitcher_module_b52d8e.css.map*/

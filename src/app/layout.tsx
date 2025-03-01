@@ -15,9 +15,9 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import type { Metadata } from "next";
-import "./styles/globals.css";
 import sen from "../../public/fonts/sen";
 import "./styles/reset.css";
+import "./styles/globals.css";
 
 export const metadata: Metadata = {
   title: "LictuaPortfolio",

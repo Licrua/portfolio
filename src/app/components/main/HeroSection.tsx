@@ -23,7 +23,7 @@ function HeroSection() {
           transition: { repeat: Infinity, duration: 1 },
         }}
         className={styles.lamp}
-        src="/images/light bulb.png"
+        src="/images/light bulb.svg"
         alt="lamp"
       />
       <div className={styles.textContainer}>

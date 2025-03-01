@@ -1,0 +1,111 @@
+/* [project]/src/app/styles/componentStyles/main/worksSection.module.css [app-client] (css) */
+.worksSection-module__1DWjiq__section {
+  width: 100%;
+  padding: 80px 72px;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.worksSection-module__1DWjiq__header {
+  font-size: 25px;
+  font-weight: 700;
+  color: gray;
+}
+
+.worksSection-module__1DWjiq__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+
+.worksSection-module__1DWjiq__projects {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.worksSection-module__1DWjiq__worksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.worksSection-module__1DWjiq__card {
+  background-color: #1d1f22;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 12px #0000001a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.worksSection-module__1DWjiq__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #fff3;
+}
+
+.worksSection-module__1DWjiq__image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.worksSection-module__1DWjiq__title {
+  font-size: 24px;
+  color: #1dbf73;
+  margin-bottom: 10px;
+}
+
+.worksSection-module__1DWjiq__description {
+  font-size: 16px;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.worksSection-module__1DWjiq__viewInfo {
+  margin-top: auto;
+  font-size: 18px;
+  color: #1dbf73;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid gray;
+  transition: color .3s ease-in-out;
+}
+
+.worksSection-module__1DWjiq__tech {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.worksSection-module__1DWjiq__stack {
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: gray;
+  padding: 10px;
+}
+
+.worksSection-module__1DWjiq__viewInfo:hover {
+  color: gray;
+}
+
+@media (width <= 768px) {
+  .worksSection-module__1DWjiq__section {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_main_worksSection_module_b52d8e.css.map*/
