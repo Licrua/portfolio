@@ -1,9 +1,9 @@
-interface Project {
-	name: string;
+type Project = {
+	name: string; 
 	description: string;
-	image: string;
-	life: string;
-	stack: string[];
-  }
-
-  export type Projects = Project[];
+	image: string; 
+	live: string; 
+	stack: string[]; 
+  };
+export default Project  
+  

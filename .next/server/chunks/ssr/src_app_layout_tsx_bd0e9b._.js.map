@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["file:///Users/ilakopendoh/Desktop/portfolio/src/app/layout.tsx"],"sourcesContent":["\n// import { NextIntlClientProvider } from \"next-intl\";\n// import { getLocale, getMessages } from \"next-intl/server\";\n// import type { Metadata } from \"next\";\n// import \"./styles/globals.css\";\n// import sen from \"../../public/fonts/sen\";\n// import \"./styles/reset.css\";\n\n// export const metadata: Metadata = {\n//   title: \"LictuaPortfolio\",\n//   description: \"website represents porftolio with works, experiance and main stack \",\n// };\n\n// export default async function RootLayout({ children }: { children: React.ReactNode }) {\n//   const locale = await getLocale();\n\n//   const messages = await getMessages();\n\n//   return (\n//     <html lang={locale}>\n//       <body className={`${sen.className}`}>\n//         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>\n//       </body>\n//     </html>\n//   );\n// }\n"],"names":[],"mappings":"AACA,sDAAsD;AACtD,6DAA6D;AAC7D,wCAAwC;AACxC,iCAAiC;AACjC,4CAA4C;AAC5C,+BAA+B;AAE/B,sCAAsC;AACtC,8BAA8B;AAC9B,wFAAwF;AACxF,KAAK;AAEL,0FAA0F;AAC1F,sCAAsC;AAEtC,0CAA0C;AAE1C,aAAa;AACb,2BAA2B;AAC3B,8CAA8C;AAC9C,0FAA0F;AAC1F,gBAAgB;AAChB,cAAc;AACd,OAAO;AACP,IAAI"}},
-    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import Footer from "./components/footer/Footer";
 import Divider from "./components/generic/Divider";
 import { Header } from "./components/header/Header";

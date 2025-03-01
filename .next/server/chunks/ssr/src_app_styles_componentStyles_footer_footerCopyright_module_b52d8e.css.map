@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/footer/footerCopyright.module.css"],"sourcesContent":[".copyRight {\n  color: white;\n  text-align: center;\n  padding: 10px;\n}/*# sourceMappingURL=footerCopyright.module.css.map */"],"names":[],"mappings":"AAAA"}},
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

@@ -41,10 +41,8 @@
 }
 
 .note {
-  display: inline;
-  color: #5221E6;
-  background-color: grey;
-  font-size: 1.5rem;
+  color: #5221e6;
+  font-size: 1.3rem;
 }
 
 .label {

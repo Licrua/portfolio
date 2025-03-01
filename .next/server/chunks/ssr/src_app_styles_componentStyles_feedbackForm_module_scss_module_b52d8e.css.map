@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/feedbackForm.module.scss.module.css"],"sourcesContent":[".feedback{background:#000;display:grid;padding:50px;border:none;grid-template-columns:repeat(auto-fit, minmax(526px, 1fr))}.header{display:flex;flex-direction:column;gap:24px}.formContainer{display:flex;justify-content:space-around;max-width:526px;max-height:491px}.field{display:flex;flex-direction:column;border:none}.title{font-size:55px;font-weight:700;line-height:66.17px;color:#fff}.text{font-weight:400;font-size:1.2rem;color:#8491a0}input{color:#fff}.label{color:#fff;margin-bottom:8px}.input{min-width:526px;min-height:50px;background-color:#181823;margin-bottom:20px}.input,.textarea{border:rgba(0,0,0,0)}.textarea{resize:none;background-color:#181823}.button{min-width:526px;min-height:75px;background:#5221e6;margin-top:40px}.span{font-size:1.2rem;font-weight:700;color:#fff}"],"names":[],"mappings":"AAAA;;;;;;;;AAA2H;;;;;;AAAoD;;;;;;;AAA0F;;;;;;AAAsD;;;;;;;AAAqE;;;;;;AAAqD;;;;AAAiB;;;;;AAAoC;;;;;;;AAAmF;;;;AAAsC;;;;;AAA+C;;;;;;;AAA2E"}},
-    {"offset": {"line": 78, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

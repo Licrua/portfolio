@@ -1,5 +1,4 @@
 "use client";
-
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,7 +6,8 @@ import styles from "@/app/styles/componentStyles/general/feedbackForm.module.css
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { fadeInUp, fieldVariants, errorShake, buttonPress } from "@/utils/motionVariants";
+import { fadeInUp, buttonPress } from "@/utils/motionVariants";
+import { FormDataType } from "@/types/formatData";
 
 export default function FeedbackForm() {
   const t = useTranslations("translation.feedbackForm");
@@ -26,7 +26,7 @@ export default function FeedbackForm() {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: FormDataType) => {
     const formData = new FormData();
     formData.append("access_key", "89367206-309f-4284-893f-051c3e5b6f1f");
     formData.append("name", data.name);
@@ -65,9 +65,9 @@ export default function FeedbackForm() {
             {t("note")}
           </motion.span>
         </motion.div>
-		<motion.div className={styles.formContainer}>
-          <motion.form 
-            onSubmit={handleSubmit(onSubmit)} 
+        <motion.div className={styles.formContainer}>
+          <motion.form
+            onSubmit={handleSubmit(onSubmit)}
             className={styles.form}
             initial="hidden"
             whileInView="visible"

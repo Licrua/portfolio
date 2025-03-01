@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/componentStyles/header/headerBurger.module.css"],"sourcesContent":[".burger {\n  display: none;\n  width: 30px;\n  height: 30px;\n  flex-direction: column;\n  justify-content: space-between;\n  cursor: pointer;\n}\n\n.burger span {\n  display: block;\n  height: 3px;\n  width: 100%;\n  background: #white;\n  transition: 0.3s;\n}/*# sourceMappingURL=headerBurger.module.css.map */"],"names":[],"mappings":"AAAA;;;;;;;;;AASA"}},
-    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
