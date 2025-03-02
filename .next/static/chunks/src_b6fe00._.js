@@ -1515,12 +1515,12 @@ function JobList({ jobs }) {
                 children: task
             }, taskIndex, false, {
                 fileName: "[project]/src/app/components/main/JobList.tsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/app/components/main/JobList.tsx",
-        lineNumber: 13,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }
