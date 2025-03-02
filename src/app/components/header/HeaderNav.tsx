@@ -63,7 +63,7 @@ export function HeaderNav() {
               <motion.li
                 key={href}
                 className={styles.item}
-                initial={{ opacity: 0, y: -10 }} // Каждый пункт падает сверху
+                initial={{ opacity: 0, y: -10 }} 
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }} // Задержка для плавности
                 whileHover={{ scale: 1.1 }} // Эффект увеличения при наведении

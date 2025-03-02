@@ -51,11 +51,12 @@
 
 @media (width <= 768px) {
   .greeting-module__BDU5DW__container {
-    padding: 15px;
+    padding: 25px;
   }
 
   .greeting-module__BDU5DW__greeting {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .greeting-module__BDU5DW__instruction {

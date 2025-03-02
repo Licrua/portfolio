@@ -11,7 +11,7 @@ export default function LocaleSwitcher() {
 
   const switchLanguage = (locale: string) => {
     document.cookie = `locale=${locale}; path=/`;
-    setIsOpen(false); // Закрываем меню после выбора
+    setIsOpen(false); 
     router.refresh();
   };
 

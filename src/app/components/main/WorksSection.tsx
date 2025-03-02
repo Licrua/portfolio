@@ -9,7 +9,6 @@ function WorksSection() {
   const t = useTranslations("translation.worksSection");
   const projects = useTranslations("translation");
 
-
   return (
     <section id="works" className={styles.section}>
       <div className={styles.container}>
@@ -84,7 +83,12 @@ function WorksSection() {
               ))}
             </div>
 
-            <Link href={project.life} className={styles.viewInfo}>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.life}
+              className={styles.viewInfo}
+            >
               {t("demo")}
             </Link>
           </motion.div>

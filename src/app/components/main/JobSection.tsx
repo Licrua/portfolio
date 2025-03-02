@@ -2,7 +2,7 @@
 import styles from "@/app/styles/componentStyles/main/jobSection.module.css";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { letterVariants, techVariants } from "@/utils/motionVariants";
+import { techVariants } from "@/utils/motionVariants";
 import Jobs from "@/types/jobs";
 import JobList from "./JobList";
 import JobSubtitle from "./JobSubtitle";

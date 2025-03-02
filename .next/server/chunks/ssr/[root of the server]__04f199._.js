@@ -577,7 +577,7 @@ function LocaleSwitcher() {
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const switchLanguage = (locale)=>{
         document.cookie = `locale=${locale}; path=/`;
-        setIsOpen(false); // Закрываем меню после выбора
+        setIsOpen(false);
         router.refresh();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1892,6 +1892,8 @@ function WorksCarousel() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$main$2f$worksCarousel$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].link,
                                     href: src.link,
                                     children: t("demo")
@@ -1987,12 +1989,12 @@ function WorksSection() {
                                 children: char
                             }, index, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 26,
+                                lineNumber: 25,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -2008,18 +2010,18 @@ function WorksSection() {
                                 children: char
                             }, index, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 41,
+                                lineNumber: 40,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2045,7 +2047,7 @@ function WorksSection() {
                                 alt: project.name
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 65,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2053,7 +2055,7 @@ function WorksSection() {
                                 children: project.name
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 66,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2061,7 +2063,7 @@ function WorksSection() {
                                 children: project.description
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 67,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2081,38 +2083,40 @@ function WorksSection() {
                                         ]
                                     }, tech, true, {
                                         fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 71,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 70,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                target: "_blank",
+                                rel: "noopener noreferrer",
                                 href: project.life,
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$main$2f$worksSection$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].viewInfo,
                                 children: t("demo")
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                                lineNumber: 87,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                        lineNumber: 56,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/main/WorksSection.tsx",
-                lineNumber: 49,
+                lineNumber: 48,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/main/WorksSection.tsx",
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -2206,84 +2210,6 @@ const Button = ({ children, onClick })=>{
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-// "use client";
-// import { motion } from "framer-motion";
-// import styles from "@/app/styles/componentStyles/main/greeting.module.css";
-// import { useTranslations } from "next-intl";
-// import { useState, useEffect } from "react";
-// import LocaleSwitcher from "../generic/LocaleSwitcher";
-// export default function Greeting({ onClick }: { onClick: () => void }) {
-//   const t = useTranslations();
-//   const title = t("translation.greeting.title");
-//   const subtitle = t("translation.greeting.subtitle");
-//   const instruction = t("translation.greeting.instruction");
-//   const [isTitleVisible, setIsTitleVisible] = useState(true); // Состояние для управления видимостью заголовка
-//   //   useEffect(() => {
-//   //     const timer = setTimeout(() => {
-//   //       setIsTitleVisible(false);
-//   //     }, 6500);
-//   //     return () => clearTimeout(timer);
-//   //   });
-//   return (
-//     <div className={styles.container}>
-//       {isTitleVisible && (
-//         <motion.h1
-//           className={styles.greeting}
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ duration: 0.3 }}
-//         >
-//           {title.split("").map((char, index) => (
-//             <motion.span
-//               key={index}
-//               initial={{ opacity: 0 }}
-//               animate={{ opacity: 1 }}
-//               exit={{ opacity: 0 }}
-//               transition={{
-//                 delay: index * 0.1, // Увеличиваем задержку между буквами
-//                 duration: 0.1,
-//               }}
-//             >
-//               {char}
-//             </motion.span>
-//           ))}
-//         </motion.h1>
-//       )}
-//       <LocaleSwitcher />
-//       {/* Лампочка и инструкция появляется после исчезновения заголовка */}
-//       {!isTitleVisible && (
-//         <>
-//           <motion.img
-//             onClick={onClick}
-//             whileTap={{
-//               x: [0, -2, 2, -2, 2, 0],
-//               rotate: [0, -1, 1, -1, 1, 0],
-//               filter: ["brightness(50%) contrast(60%)", "brightness(150%) contrast(250%)"],
-//               transition: { repeat: Infinity, duration: 0.5, repeatType: "loop" },
-//             }}
-//             className={styles.lamp}
-//             src="/images/light bulb.svg"
-//             alt="lamp"
-//             initial={{
-//               opacity: 0,
-//               filter: ["brightness(50%) contrast(60%)", "brightness(40%) contrast(100%)"],
-//             }}
-//             animate={{ opacity: 1 }}
-//             transition={{ delay: 1, duration: 2 }} // Задержка для появления лампочки
-//           />
-//           <motion.p
-//             className={styles.instruction}
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             transition={{ delay: 2, duration: 1 }}
-//           >
-//             {instruction}
-//           </motion.p>
-//         </>
-//       )}
-//     </div>
-//   );
-// }
 __turbopack_esm__({
     "default": (()=>Greeting)
 });
@@ -2343,12 +2269,12 @@ function Greeting({ onClick }) {
                                 children: char
                             }, index, false, {
                                 fileName: "[project]/src/app/components/main/Greeting.tsx",
-                                lineNumber: 118,
+                                lineNumber: 32,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 111,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
@@ -2384,17 +2310,17 @@ function Greeting({ onClick }) {
                                 children: char
                             }, index, false, {
                                 fileName: "[project]/src/app/components/main/Greeting.tsx",
-                                lineNumber: 139,
+                                lineNumber: 53,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 132,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$generic$2f$LocaleSwitcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 153,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$generic$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2402,7 +2328,7 @@ function Greeting({ onClick }) {
                         children: proceed
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 154,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this)
                 ]
@@ -2457,7 +2383,7 @@ function Greeting({ onClick }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 160,
+                        lineNumber: 74,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -2475,7 +2401,7 @@ function Greeting({ onClick }) {
                         children: instruction
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/main/Greeting.tsx",
-                        lineNumber: 178,
+                        lineNumber: 92,
                         columnNumber: 11
                     }, this)
                 ]
@@ -2483,7 +2409,7 @@ function Greeting({ onClick }) {
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/main/Greeting.tsx",
-        lineNumber: 108,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
@@ -2508,8 +2434,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$main$2f$Skills$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/main/Skills.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$main$2f$WorksCarousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/main/WorksCarousel.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$main$2f$WorksSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/main/WorksSection.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$main$2f$Greeting$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/main/Greeting.tsx [app-ssr] (ecmascript)"); // Не забудь импортировать Greeting
-'use client';
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$main$2f$Greeting$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/main/Greeting.tsx [app-ssr] (ecmascript)");
+"use client";
 ;
 ;
 ;

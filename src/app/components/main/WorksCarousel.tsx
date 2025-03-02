@@ -29,7 +29,12 @@ export default function WorksCarousel() {
           {projects.map((src, index) => (
             <SwiperSlide key={index}>
               <img src={src.src} alt={`Slide ${index + 1}`} className={styles.image} />
-              <Link className={styles.link} href={src.link}>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                href={src.link}
+              >
                 {t("demo")}
               </Link>
             </SwiperSlide>

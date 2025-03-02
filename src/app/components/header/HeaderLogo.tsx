@@ -10,9 +10,9 @@ function HeaderLogo() {
       initial={{ opacity: 0, backgroundColor: "transparent" }}
       animate={{
         opacity: 1,
-        backgroundColor: ["#5221E6", "#6A30E6", "#5221E6"], // Изменение цвета
+        backgroundColor: ["#5221E6", "#6A30E6", "#5221E6"], 
       }}
-      transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }} // Бесконечное мигание
+      transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }} 
     >
       <motion.img
         className={styles.logoImage}
