@@ -1,16 +1,4 @@
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={`${sen.className}`}>
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
+
 
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";

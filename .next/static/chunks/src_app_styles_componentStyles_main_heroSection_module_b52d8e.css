@@ -1,6 +1,5 @@
 /* [project]/src/app/styles/componentStyles/main/heroSection.module.css [app-client] (css) */
 .heroSection-module__Jo2J-G__hero {
-  background-color: #000;
   position: relative;
   display: flex;
   padding: 30px;
@@ -22,15 +21,12 @@
 
 .heroSection-module__Jo2J-G__title {
   font-weight: 700;
-  color: #fff;
   font-size: 78px;
   line-height: 93.84px;
 }
 
 .heroSection-module__Jo2J-G__description {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #fff;
   margin-top: 32px;
   letter-spacing: 3.5px;
   font-style: italic;

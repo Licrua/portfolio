@@ -7,10 +7,6 @@
   padding-left: 72px;
 }
 
-.jobSection {
-  background-color: black;
-}
-
 .job {
   margin-top: 20px;
 }
@@ -25,7 +21,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: white;
 }
 
 .jobs {
@@ -36,9 +31,9 @@
 }
 
 .job {
-  background-color: #1d1f22;
   border-radius: 8px;
   padding: 20px;
+  background-color: #1d1f22;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

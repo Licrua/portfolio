@@ -1,5 +1,4 @@
 .feedback {
-	background: black;
 	display: grid;
 	padding: 50px;
 	border: none;
@@ -31,7 +30,6 @@
 	font-size: 55px;
 	font-weight: 700;
 	line-height: 66.17px;
-	color: white;
 }
 
 .text {
@@ -45,7 +43,6 @@
 }
 
 .label {
-	color: white;
 	margin-bottom: 8px;
 }
 
@@ -60,7 +57,6 @@
 
 .input, .textarea {
 	border: transparent;
-	color: white;
 	padding: 10px;
 }
 
@@ -85,7 +81,6 @@
 .span {
 	font-size: 1.2rem;
 	font-weight: 700;
-	color: white;
 }
 
 @media (max-width: 768px) {

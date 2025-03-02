@@ -2,7 +2,6 @@
 @use "../../variables" as *;
 
 .hero {
-	background-color: $background;
 	position: relative;
 	display: flex;
 	padding: 30px;
@@ -26,14 +25,11 @@
 
 .title {
 	font-weight: 700;
-	color: $main-color;
 	font-size: 78px;
 	line-height: 93.84px;
 }
 .description {
 	font-size: 1.2rem;
-	line-height: 1.5rem;
-	color: $main-color;
 	margin-top: 32px;
 	letter-spacing: 3.5px;
 	font-style: italic;

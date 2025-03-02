@@ -7,9 +7,6 @@
 	padding-left: 72px;
 }
 
-.jobSection {
-	background-color: black;
-}
 
 
 .job {
@@ -26,7 +23,6 @@
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 44px;
-	color: white;
 }
 
 .jobs {
@@ -34,14 +30,15 @@
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
  	gap: 20px;
 	padding: 0 72px;
+	
 	// max-width: 1400px;
 	// width: 100%;
 }
 
 .job {
-	background-color: #1d1f22;
 	border-radius: 8px;
 	padding: 20px;
+	background-color: #1d1f22;
 	color: white;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

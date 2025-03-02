@@ -11,7 +11,6 @@ import JobTitle from "./JobTitle";
 function JobSection() {
   const t = useTranslations("translation.jobSection");
   const jobs = useTranslations("translation");
-  console.log("dasda", jobs.raw("jobs"));
 
   return (
     <section className={styles.jobSection}>

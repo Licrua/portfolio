@@ -181,7 +181,6 @@
 
 /* [project]/src/app/styles/componentStyles/general/feedbackForm.module.css [app-client] (css) */
 .feedbackForm-module__JQYZfq__feedback {
-  background: #000;
   display: grid;
   padding: 50px;
   border: none;
@@ -213,7 +212,6 @@
   font-size: 55px;
   font-weight: 700;
   line-height: 66.17px;
-  color: #fff;
 }
 
 .feedbackForm-module__JQYZfq__text {
@@ -228,7 +226,6 @@
 }
 
 .feedbackForm-module__JQYZfq__label {
-  color: #fff;
   margin-bottom: 8px;
 }
 
@@ -242,7 +239,6 @@
 
 .feedbackForm-module__JQYZfq__input, .feedbackForm-module__JQYZfq__textarea {
   border: #0000;
-  color: #fff;
   padding: 10px;
 }
 
@@ -267,7 +263,6 @@
 .feedbackForm-module__JQYZfq__span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
 }
 
 @media (width <= 768px) {
@@ -318,7 +313,6 @@
 
 /* [project]/src/app/styles/componentStyles/main/heroSection.module.css [app-client] (css) */
 .heroSection-module__Jo2J-G__hero {
-  background-color: #000;
   position: relative;
   display: flex;
   padding: 30px;
@@ -340,15 +334,12 @@
 
 .heroSection-module__Jo2J-G__title {
   font-weight: 700;
-  color: #fff;
   font-size: 78px;
   line-height: 93.84px;
 }
 
 .heroSection-module__Jo2J-G__description {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: #fff;
   margin-top: 32px;
   letter-spacing: 3.5px;
   font-style: italic;
@@ -394,10 +385,6 @@
   padding-left: 72px;
 }
 
-.jobSection-module__diP9Ha__jobSection {
-  background-color: #000;
-}
-
 .jobSection-module__diP9Ha__job {
   margin-top: 20px;
 }
@@ -412,7 +399,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: #fff;
 }
 
 .jobSection-module__diP9Ha__jobs {
@@ -423,9 +409,9 @@
 }
 
 .jobSection-module__diP9Ha__job {
-  background-color: #1d1f22;
   border-radius: 8px;
   padding: 20px;
+  background-color: #1d1f22;
   color: #fff;
   box-shadow: 0 4px 12px #0000001a;
 }

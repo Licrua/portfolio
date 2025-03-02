@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import Footer from "./components/footer/Footer";
 import Divider from "./components/generic/Divider";
 import { Header } from "./components/header/Header";
@@ -8,10 +10,12 @@ import Main from "./components/main/Main";
 import Skills from "./components/main/Skills";
 import WorksCarousel from "./components/main/WorksCarousel";
 import WorksSection from "./components/main/WorksSection";
-
+import Greeting from "./components/main/Greeting"; // Не забудь импортировать Greeting
 
 export default function Home() {
-  return (
+  const [infoShow, setInfoShown] = useState(false);
+
+  return infoShow ? (
     <>
       <Header />
       <Main>
@@ -30,5 +34,7 @@ export default function Home() {
       </Main>
       <Footer />
     </>
+  ) : (
+    <Greeting onClick={() => setInfoShown(true)} />
   );
 }

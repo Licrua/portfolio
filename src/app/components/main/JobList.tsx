@@ -2,9 +2,12 @@ import { techVariants } from "@/utils/motionVariants";
 import styles from "@/app/styles/componentStyles/main/jobSection.module.css";
 import { motion } from "framer-motion";
 import Jobs from "@/types/jobs";
+import { useTranslations } from "next-intl";
 
 
 function JobList({ jobs }: { jobs: Jobs }) {
+	
+
 
   return (
     <ul className={styles.tasks}>

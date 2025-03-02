@@ -1,6 +1,5 @@
 /* [project]/src/app/styles/componentStyles/general/feedbackForm.module.css [app-client] (css) */
 .feedbackForm-module__JQYZfq__feedback {
-  background: #000;
   display: grid;
   padding: 50px;
   border: none;
@@ -32,7 +31,6 @@
   font-size: 55px;
   font-weight: 700;
   line-height: 66.17px;
-  color: #fff;
 }
 
 .feedbackForm-module__JQYZfq__text {
@@ -47,7 +45,6 @@
 }
 
 .feedbackForm-module__JQYZfq__label {
-  color: #fff;
   margin-bottom: 8px;
 }
 
@@ -61,7 +58,6 @@
 
 .feedbackForm-module__JQYZfq__input, .feedbackForm-module__JQYZfq__textarea {
   border: #0000;
-  color: #fff;
   padding: 10px;
 }
 
@@ -86,7 +82,6 @@
 .feedbackForm-module__JQYZfq__span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
 }
 
 @media (width <= 768px) {

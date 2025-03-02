@@ -1,0 +1,66 @@
+/* [project]/src/app/styles/componentStyles/main/greeting.module.css [app-client] (css) */
+.greeting-module__BDU5DW__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+.greeting-module__BDU5DW__greeting {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  line-height: 3rem;
+  font-weight: bold;
+  letter-spacing: .5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+}
+
+.greeting-module__BDU5DW__lamp {
+  position: absolute;
+  top: -20px;
+  height: auto;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: transform .2s ease-in-out;
+}
+
+.greeting-module__BDU5DW__subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #eaeaea;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 10px #ffffff80;
+}
+
+.greeting-module__BDU5DW__instruction {
+  position: absolute;
+  top: 230px;
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+@media (width <= 768px) {
+  .greeting-module__BDU5DW__container {
+    padding: 15px;
+  }
+
+  .greeting-module__BDU5DW__greeting {
+    font-size: 2rem;
+  }
+
+  .greeting-module__BDU5DW__instruction {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_main_greeting_module_b52d8e.css.map*/

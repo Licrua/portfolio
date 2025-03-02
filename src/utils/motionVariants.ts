@@ -54,3 +54,40 @@ export const fadeInUp = {
 	whileTap: { scale: 0.95 },
   };
   
+
+export  const backgroundVariant = {
+	initial: { backgroundColor: "#F2FFBD" },
+	hover: {
+	  backgroundColor: "#022D42",
+	  transition: { delay: 0.1, duration: 0.5, ease: [0.19, 1, 0.22, 1] },
+	},
+	animate: {
+	  backgroundColor: "#F2FFBD",
+	  transition: { delay: 0.1, duration: 0.5, ease: [0.19, 1, 0.22, 1] },
+	},
+  };
+  
+  export const firstTextVariant = {
+	initial: { y: 0 },
+	hover: {
+	  y: -20,
+	  transition: { duration: 1.125, ease: [0.19, 1, 0.22, 1] },
+	},
+	animate: {
+	  y: 0,
+	  transition: { duration: 1.125, ease: [0.19, 1, 0.22, 1] },
+	},
+  };
+  
+  export const secondTextVariant = {
+	initial: { y: 20 },
+	hover: {
+	  y: 0,
+	  transition: { duration: 1.125, ease: [0.19, 1, 0.22, 1] },
+	},
+	animate: {
+	  y: 20,
+	  transition: { duration: 1.125, ease: [0.19, 1, 0.22, 1] },
+	},
+  };
+  

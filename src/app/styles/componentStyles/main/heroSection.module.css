@@ -1,5 +1,4 @@
 .hero {
-  background-color: black;
   position: relative;
   display: flex;
   padding: 30px;
@@ -21,15 +20,12 @@
 
 .title {
   font-weight: 700;
-  color: white;
   font-size: 78px;
   line-height: 93.84px;
 }
 
 .description {
   font-size: 1.2rem;
-  line-height: 1.5rem;
-  color: white;
   margin-top: 32px;
   letter-spacing: 3.5px;
   font-style: italic;

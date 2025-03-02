@@ -8,10 +8,6 @@
   padding-left: 72px;
 }
 
-.jobSection-module__diP9Ha__jobSection {
-  background-color: #000;
-}
-
 .jobSection-module__diP9Ha__job {
   margin-top: 20px;
 }
@@ -26,7 +22,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: #fff;
 }
 
 .jobSection-module__diP9Ha__jobs {
@@ -37,9 +32,9 @@
 }
 
 .jobSection-module__diP9Ha__job {
-  background-color: #1d1f22;
   border-radius: 8px;
   padding: 20px;
+  background-color: #1d1f22;
   color: #fff;
   box-shadow: 0 4px 12px #0000001a;
 }
