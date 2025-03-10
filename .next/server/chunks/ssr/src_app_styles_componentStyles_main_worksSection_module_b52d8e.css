@@ -57,7 +57,8 @@
 
 .worksSection-module__1DWjiq__image {
   width: 100%;
-  max-width: 800px;
+  max-height: 150px;
+  object-fit: content;
   border-radius: 8px;
   margin-bottom: 20px;
 }

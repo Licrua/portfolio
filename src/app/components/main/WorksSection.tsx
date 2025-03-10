@@ -64,8 +64,6 @@ function WorksSection() {
             <img className={styles.image} src={project.image} alt={project.name} />
             <h3 className={styles.title}>{project.name}</h3>
             <p className={styles.description}>{project.description}</p>
-
-            {/* Анимированный стек технологий */}
             <div className={styles.stack}>
               {project.stack.map((tech: string, i: number) => (
                 <motion.span

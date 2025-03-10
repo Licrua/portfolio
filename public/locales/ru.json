@@ -2,8 +2,8 @@
   "translation": {
     "greeting": {
       "title": "Привет, здравствуйте.",
-	  "subtitle": "Я рад тебя видеть!",
-	  "proceed": "Продолжить",
+      "subtitle": "Я рад тебя видеть!",
+      "proceed": "Продолжить",
       "instruction": "Потяни за лампочку"
     },
     "nav": {
@@ -85,6 +85,21 @@
         ],
         "image": "/images/works/shop.png",
         "life": "https://licrua-market-243o.vercel.app/"
+      },
+      {
+        "name": "Wallpaper Calculator",
+        "description": "Проект предназначен для упрощения процесса расчета необходимого количества обоев для определенной площади. Пользователи могут ввести размеры стен и получить точное количество рулонов, которое им потребуется для оформления помещения. В проекте учтены различные типы обоев и их характеристики, что позволяет получить максимально точные данные для покупки материалов.",
+        "stack": [
+          "Vite",
+          "React",
+          "TypeScript",
+          "React Hook Form",
+          "Zod",
+          "React Hot Toast",
+          "@hookform/resolvers"
+        ],
+        "image": "/images/works/wallpaperCalculator.png",
+        "life": "wallpaper-calculator-887j.vercel.app/"
       }
     ],
     "feedbackForm": {

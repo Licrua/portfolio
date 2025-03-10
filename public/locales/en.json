@@ -70,6 +70,21 @@
         "life": "https://meeting-point-chat.onrender.com/"
       },
       {
+        "name": "Wallpaper Calculator",
+        "description": "This project is designed to simplify the process of calculating the required amount of wallpaper for a given area. Users can enter wall dimensions and get the exact number of rolls they need to decorate the room. The project takes into account various types of wallpaper and their characteristics, allowing for the most accurate data to purchase materials.",
+        "stack": [
+          "Vite",
+          "React",
+          "TypeScript",
+          "React Hook Form",
+          "Zod",
+          "React Hot Toast",
+          "@hookform/resolvers"
+        ],
+        "image": "/images/works/wallpaperCalculator.png",
+        "life": "wallpaper-calculator-887j.vercel.app/"
+      },
+      {
         "name": "LicruaMarket",
         "description": "LicruaMarket is an innovative online service related to food products. It is currently in active development, but you can already see the foundation of its future functionality. Features implemented include Firebase authentication and a main page with a convenient header and footer.",
         "stack": [
@@ -85,6 +100,21 @@
         ],
         "image": "/images/works/shop.png",
         "life": "https://licrua-market-243o.vercel.app/"
+      },
+      {
+        "name": "Wallpaper Calculator",
+        "description": "This project is designed to simplify the process of calculating the required amount of wallpaper for a given area. Users can enter wall dimensions and get the exact number of rolls they need to decorate the room. The project takes into account various types of wallpaper and their characteristics, allowing for the most accurate data to purchase materials.",
+        "stack": [
+          "Vite",
+          "React",
+          "TypeScript",
+          "React Hook Form",
+          "Zod",
+          "React Hot Toast",
+          "@hookform/resolvers"
+        ],
+        "image": "/images/works/wallpaperCalculator.png",
+        "life": "wallpaper-calculator-887j.vercel.app/"
       }
     ],
     "feedbackForm": {
