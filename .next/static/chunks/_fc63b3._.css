@@ -1201,8 +1201,7 @@ button.swiper-pagination-bullet {
 
 .worksSection-module__1DWjiq__image {
   width: 100%;
-  max-height: 150px;
-  object-fit: content;
+  max-width: 800px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -1279,7 +1278,6 @@ button.swiper-pagination-bullet {
 
 .greeting-module__BDU5DW__lamp {
   position: absolute;
-  top: -20px;
   height: auto;
   cursor: pointer;
   margin: 20px 0;
@@ -1297,7 +1295,7 @@ button.swiper-pagination-bullet {
 
 .greeting-module__BDU5DW__instruction {
   position: absolute;
-  top: 230px;
+  top: 150px;
   font-size: 1.2rem;
   color: #666;
   text-align: center;

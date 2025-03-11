@@ -22,7 +22,6 @@
 
 .lamp {
   position: absolute;
-  top: -20;
   height: auto;
   cursor: pointer;
   margin: 20px 0;
@@ -40,7 +39,7 @@
 
 .instruction {
   position: absolute;
-  top: 230;
+  top: 150px;
   font-size: 1.2rem;
   color: #666;
   text-align: center;
