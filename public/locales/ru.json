@@ -99,7 +99,7 @@
           "@hookform/resolvers"
         ],
         "image": "/images/works/wallpaperCalculator.png",
-        "life": "wallpaper-calculator-887j.vercel.app/"
+        "life": "https://wallpaper-calculator-887j.vercel.app/"
       }
     ],
     "feedbackForm": {
