@@ -445,6 +445,19 @@
 }
 
 
+/* [project]/src/app/styles/componentStyles/main/ThoughtBubble.module.css [app-client] (css) */
+.ThoughtBubble-module__l-MiIW__container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  background-image: url("/images/pivo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
 /* [project]/src/app/styles/componentStyles/main/jobSection.module.css [app-client] (css) */
 .jobSection-module__diP9Ha__header {
   display: flex;
@@ -548,7 +561,6 @@
   background: #000;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
   font-size: 30px;
   padding: 20px;
 }
@@ -556,11 +568,7 @@
 .skills-module__DdHs_q__circle {
   min-width: 250px;
   min-height: 250px;
-  margin-bottom: 100px;
   border-radius: 50%;
-  background-image: url("/images/LicruaCircle.webp");
-  background-size: 150%;
-  background-position: center;
   border: 2px solid #00bcd4;
   position: relative;
   display: flex;
@@ -569,8 +577,8 @@
 }
 
 .skills-module__DdHs_q__skill {
-  background-image: url("/images/LicruaCircle.webp");
   position: absolute;
+  background: #00bcd4;
   color: #fff;
   padding: 6px 12px;
   border-radius: 20px;
@@ -1358,4 +1366,4 @@ button.swiper-pagination-bullet {
 }
 
 
-/*# sourceMappingURL=_fc63b3._.css.map*/
+/*# sourceMappingURL=_5ef3ef._.css.map*/

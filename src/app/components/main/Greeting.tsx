@@ -1,4 +1,3 @@
-
 "use client";
 import { motion } from "framer-motion";
 import styles from "@/app/styles/componentStyles/main/greeting.module.css";
@@ -73,9 +72,12 @@ export default function Greeting({ onClick }: { onClick: () => void }) {
         <>
           <motion.img
             onClick={onClick}
+            role="button"
+            tabIndex={0}
             whileTap={{
               x: [0, -2, 2, -2, 2, 0],
               rotate: [0, -1, 1, -1, 1, 0],
+              y: [-20, -15, -10, -5, 0],
               filter: ["brightness(50%) contrast(60%)", "brightness(150%) contrast(250%)"],
               transition: { repeat: Infinity, duration: 0.5, repeatType: "loop" },
             }}

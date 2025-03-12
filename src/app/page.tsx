@@ -10,10 +10,14 @@ import Main from "./components/main/Main";
 import Skills from "./components/main/Skills";
 import WorksCarousel from "./components/main/WorksCarousel";
 import WorksSection from "./components/main/WorksSection";
-import Greeting from "./components/main/Greeting"; 
+import Greeting from "./components/main/Greeting";
 
 export default function Home() {
   const [infoShow, setInfoShown] = useState(false);
+
+  const handleClick = () => {
+		setInfoShown(true)
+  };
 
   return infoShow ? (
     <>
@@ -35,6 +39,6 @@ export default function Home() {
       <Footer />
     </>
   ) : (
-    <Greeting onClick={() => setInfoShown(true)} />
+    <Greeting onClick={handleClick} />
   );
 }

@@ -22,14 +22,11 @@ function HeroSection() {
           className={styles.heroImage}
         />
       </div>
-
       <div className={styles.textContainer}>
         <motion.h1 className={styles.title} initial="hidden" animate="visible">
           {title.split("").map((char, index) => (
             <motion.span
-              style={
-                index === title.length - 1 ? { color: "red", textTransform: "uppercase" } : {}
-              }
+              style={index === title.length - 1 ? { color: "red", textTransform: "uppercase" } : {}}
               key={index}
               custom={index}
               variants={letterVariants}
@@ -38,7 +35,6 @@ function HeroSection() {
             </motion.span>
           ))}
         </motion.h1>
-
         <motion.p className={styles.description} initial="hidden" animate="visible">
           {description.split("").map((char, index) => (
             <motion.span key={index} custom={index} variants={letterVariants}>

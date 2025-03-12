@@ -548,6 +548,7 @@
   background: #000;
   color: #fff;
   text-align: center;
+  margin-bottom: 50px;
   font-size: 30px;
   padding: 20px;
 }
@@ -555,7 +556,11 @@
 .skills-module__DdHs_q__circle {
   min-width: 250px;
   min-height: 250px;
+  margin-bottom: 100px;
   border-radius: 50%;
+  background-image: url("/images/LicruaCircle.webp");
+  background-size: 150%;
+  background-position: center;
   border: 2px solid #00bcd4;
   position: relative;
   display: flex;
@@ -564,8 +569,8 @@
 }
 
 .skills-module__DdHs_q__skill {
+  background-image: url("/images/LicruaCircle.webp");
   position: absolute;
-  background: #00bcd4;
   color: #fff;
   padding: 6px 12px;
   border-radius: 20px;
@@ -1278,6 +1283,7 @@ button.swiper-pagination-bullet {
 
 .greeting-module__BDU5DW__lamp {
   position: absolute;
+  top: -20px;
   height: auto;
   cursor: pointer;
   margin: 20px 0;
@@ -1295,7 +1301,7 @@ button.swiper-pagination-bullet {
 
 .greeting-module__BDU5DW__instruction {
   position: absolute;
-  top: 150px;
+  top: 230px;
   font-size: 1.2rem;
   color: #666;
   text-align: center;

@@ -23,6 +23,7 @@
 
 .greeting-module__BDU5DW__lamp {
   position: absolute;
+  top: -20px;
   height: auto;
   cursor: pointer;
   margin: 20px 0;
@@ -40,7 +41,7 @@
 
 .greeting-module__BDU5DW__instruction {
   position: absolute;
-  top: 150px;
+  top: 230px;
   font-size: 1.2rem;
   color: #666;
   text-align: center;

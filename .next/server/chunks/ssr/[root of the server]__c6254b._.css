@@ -87,6 +87,10 @@ table {
   border-spacing: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 
 /* [project]/src/app/styles/globals.css [app-client] (css) */
 :root {

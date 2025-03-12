@@ -35,4 +35,8 @@ table {
   border-spacing: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=src_app_styles_reset_b52d8e.css.map*/

@@ -18,7 +18,7 @@ export default function LocaleSwitcher() {
   return (
     <div className={styles.switcher}>
       <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
-        <Image src="/images/language.png" alt="Language" width={40} height={40} />
+        <Image src="/images/language.png" priority alt="Language" width={40} height={40} />
       </button>
       {isOpen && (
         <div className={styles.menu}>

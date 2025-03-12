@@ -4,7 +4,7 @@
       "title": "Hello, welcome.",
       "subtitle": "I'm glad to see you here!",
       "proceed": "Continue",
-      "instruction": "Pull the lightbulb"
+      "instruction": "Press the lightbulb"
     },
     "nav": {
       "items": [
@@ -100,21 +100,6 @@
         ],
         "image": "/images/works/shop.png",
         "life": "https://licrua-market-243o.vercel.app/"
-      },
-      {
-        "name": "Wallpaper Calculator",
-        "description": "This project is designed to simplify the process of calculating the required amount of wallpaper for a given area. Users can enter wall dimensions and get the exact number of rolls they need to decorate the room. The project takes into account various types of wallpaper and their characteristics, allowing for the most accurate data to purchase materials.",
-        "stack": [
-          "Vite",
-          "React",
-          "TypeScript",
-          "React Hook Form",
-          "Zod",
-          "React Hot Toast",
-          "@hookform/resolvers"
-        ],
-        "image": "/images/works/wallpaperCalculator.png",
-        "life": "wallpaper-calculator-887j.vercel.app/"
       }
     ],
     "feedbackForm": {

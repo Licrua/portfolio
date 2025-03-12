@@ -1,0 +1,13 @@
+/* [project]/src/app/styles/componentStyles/main/ThoughtBubble.module.css [app-client] (css) */
+.ThoughtBubble-module__l-MiIW__container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  background-image: url("/images/pivo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=src_app_styles_componentStyles_main_ThoughtBubble_module_b52d8e.css.map*/

@@ -25,8 +25,8 @@ export default function Skills() {
   useEffect(() => {
     const newPositions = skills.map((_, index) => {
       const angle = (index / skills.length) * 2 * Math.PI; // Вычисляем угол
-      const x = Math.cos(angle) * 150; // X-координата
-      const y = Math.sin(angle) * 100; // Y-координата
+      const x = Math.cos(angle) * 180; // X-координата
+      const y = Math.sin(angle) * 140; // Y-координата
       return { x, y };
     });
     setPositions(newPositions);
