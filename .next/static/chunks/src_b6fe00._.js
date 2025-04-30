@@ -1975,6 +1975,10 @@ const projects = [
     {
         src: "/images/carousel/webovio.png",
         link: "https://tailwind-ts-next-js-proj.vercel.app/"
+    },
+    {
+        src: "/images/carousel/softline.png",
+        link: "https://softline-owvc.vercel.app/"
     }
 ];
 const __TURBOPACK__default__export__ = projects;
