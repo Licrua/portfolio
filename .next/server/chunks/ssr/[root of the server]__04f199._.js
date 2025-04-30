@@ -1799,10 +1799,6 @@ __turbopack_esm__({
 });
 const projects = [
     {
-        src: "/images/carousel/constuct.png",
-        link: "https://licrua.github.io/konstruct-layout/"
-    },
-    {
         src: "/images/carousel/influencer.png",
         link: "https://licrua.github.io/influencer-layout/"
     },
