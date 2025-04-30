@@ -569,7 +569,7 @@
 }
 
 .skills-module__DdHs_q__skill {
-  background-image: url("/images/LicruaCircle.webp");
+  background-image: url("/images/--swiper-pagination-left.webp");
   position: absolute;
   color: #fff;
   padding: 6px 12px;
@@ -603,7 +603,7 @@
 
 .worksCarousel-module__Du515W__link {
   position: absolute;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
   margin-top: auto;
   font-size: 18px;
   color: #fff;
