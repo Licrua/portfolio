@@ -54,13 +54,11 @@
   max-width: 526px;
   min-width: 300px;
   min-height: 50px;
-  background-color: #181823;
   margin-bottom: 20px;
-}
-
-.feedbackForm-module__JQYZfq__input, .feedbackForm-module__JQYZfq__textarea {
   border: #0000;
   padding: 10px;
+  background-color: wheat;
+  font-size: 1rem;
 }
 
 .feedbackForm-module__JQYZfq__input:focus, .feedbackForm-module__JQYZfq__textarea:focus {
@@ -76,7 +74,6 @@
 
 .feedbackForm-module__JQYZfq__textarea {
   resize: none;
-  background-color: #181823;
 }
 
 .feedbackForm-module__JQYZfq__button {

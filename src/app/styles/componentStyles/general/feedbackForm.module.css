@@ -53,13 +53,11 @@
   max-width: 526px;
   min-width: 300px;
   min-height: 50px;
-  background-color: #181823;
   margin-bottom: 20px;
-}
-
-.input, .textarea {
   border: transparent;
   padding: 10px;
+  background-color: wheat;
+  font-size: 1rem;
 }
 
 .input:focus, .textarea:focus {
@@ -75,7 +73,6 @@
 
 .textarea {
   resize: none;
-  background-color: #181823;
 }
 
 .button {
