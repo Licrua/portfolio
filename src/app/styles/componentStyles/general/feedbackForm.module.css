@@ -62,6 +62,12 @@
   padding: 10px;
 }
 
+.input:focus, .textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
 .error {
   color: red;
   margin: 10px 0px;
@@ -77,6 +83,7 @@
   max-width: 526px;
   min-height: 75px;
   background: #5221E6;
+  color: white;
   margin-top: 40px;
   transition: transform 0.2s ease;
 }

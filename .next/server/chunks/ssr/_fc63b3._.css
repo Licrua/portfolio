@@ -35,7 +35,7 @@
 .footerSocialLinks-module__3uFWdq__container {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 
@@ -306,6 +306,12 @@
   padding: 10px;
 }
 
+.feedbackForm-module__JQYZfq__input:focus, .feedbackForm-module__JQYZfq__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f5f5f5;
+  border: 1px solid #f5f5f5;
+}
+
 .feedbackForm-module__JQYZfq__error {
   color: red;
   margin: 10px 0;
@@ -321,6 +327,7 @@
   max-width: 526px;
   min-height: 75px;
   background: #5221e6;
+  color: #fff;
   margin-top: 40px;
   transition: transform .2s;
 }

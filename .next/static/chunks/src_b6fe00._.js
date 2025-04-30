@@ -193,6 +193,12 @@ const socialLinks = [
         name: "Email",
         img: "/images/footer/mail.png",
         url: 'mailto:ilay1275@mail.ru'
+    },
+    {
+        id: "github",
+        name: "Github",
+        img: "/images/footer/github.png",
+        url: 'mailto:https://github.com/Licrua'
     }
 ];
 const __TURBOPACK__default__export__ = socialLinks;
