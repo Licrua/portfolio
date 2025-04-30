@@ -643,10 +643,6 @@
 }
 
 @media (width <= 990px) {
-  body {
-    background: #fff;
-  }
-
   .worksCarousel-module__Du515W__image {
     -o-object-fit: contain;
     object-fit: contain;
