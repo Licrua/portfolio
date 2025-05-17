@@ -100,7 +100,24 @@
         ],
         "image": "/images/works/wallpaperCalculator.png",
         "life": "https://wallpaper-calculator-887j.vercel.app/"
-      }
+      },
+	  {
+      "name": "LicruaSchool",
+      "description": "LicruaSchool — это современное приложение для создания и управления списками желаний. Позволяет пользователям добавлять, редактировать и делиться своими желаниями с друзьями. Реализована авторизация, адаптивный дизайн и интеграция с социальными сетями.",
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "TailwindCSS",
+        "Firebase",
+        "Framer Motion",
+        "Clerk",
+        "React Hook Form"
+      ],
+      "image": "/images/works/outschool.png",
+      "life": "https://wishbone-app-demo.vercel.app/"
+    }
     ],
     "feedbackForm": {
       "title": "Обратная форма",

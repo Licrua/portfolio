@@ -51,6 +51,10 @@
   font-size: 32px;
   padding: 10px;
   border-radius: 10px;
+  border: 2px solid #4000ff;
+}
+
+.worksCarousel-module__Du515W__description {
   margin-bottom: 20px;
   box-shadow: 0 4px 8px #0003;
 }
@@ -59,10 +63,11 @@
   background: #000;
 }
 
-@media (width <= 990px) {
+@media (width <= 1050px) {
   .worksCarousel-module__Du515W__image {
     -o-object-fit: contain;
     object-fit: contain;
+    max-height: 400px;
   }
 
   .worksCarousel-module__Du515W__link {

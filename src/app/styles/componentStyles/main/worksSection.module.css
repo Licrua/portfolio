@@ -57,9 +57,18 @@
 .image {
   width: 100%;
   max-width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
   margin-bottom: 20px;
+  height: 200px;
 }
+
+.largeImage {
+  height: 300px;
+}
+
+
 
 .title {
   font-size: 24px;
@@ -101,6 +110,58 @@
   color: grey;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 32px 0 0 0;
+}
+
+.pageButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1.5px solid #1dbf73;
+  background: #181a1b;
+  color: #1dbf73;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(29, 191, 115, 0.08);
+}
+
+.pageButton:hover:not(.disabled):not(.activePage) {
+  background: #1dbf73;
+  color: #181a1b;
+  border: 1.5px solid #fff;
+}
+
+.activePage {
+  background: #1dbf73;
+  color: #181a1b;
+  border: 2px solid #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(29, 191, 115, 0.15);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #232323;
+  color: #888;
+  border: 1.5px solid #444;
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    gap: 4px;
+  }
+  .pageButton {
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+}
 @media (max-width: 768px) {
   .section {
     padding: 10px;

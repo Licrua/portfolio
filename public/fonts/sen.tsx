@@ -1,4 +1,7 @@
-import { Roboto, Sen } from "next/font/google";
+import {  Sen } from "next/font/google";
+
+
+
 
 const sen = Sen({
 	weight: ['400', '700'],
@@ -7,4 +10,4 @@ const sen = Sen({
 	display: 'swap',
   });
   
-  export default sen;
+export default sen;

@@ -100,7 +100,23 @@
         ],
         "image": "/images/works/shop.png",
         "life": "https://licrua-market-243o.vercel.app/"
-      }
+      },
+	  {
+      "name": "LicruaSchool",
+	  "description": "LicruaSchool is a modern online platform for creating, selling, and taking educational courses. It enables instructors to manage their courses and students to learn in a convenient, user-friendly environment. The platform features authentication, responsive design, and social media integration for easy sharing and engagement.",
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "TailwindCSS",
+        "Firebase",
+        "Clerk",
+        "React Hook Form"
+      ],
+      "image": "/images/works/outschool.png",
+      "life": "https://outschool111.vercel.app/"
+    }
     ],
     "feedbackForm": {
       "title": "Feedback Form",

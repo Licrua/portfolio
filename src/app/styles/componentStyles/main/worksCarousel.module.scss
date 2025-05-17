@@ -50,6 +50,10 @@
 	font-size: 32px;
 	padding: 10px;
 	border-radius: 10px;
+	border: 2px solid rgb(64, 0, 255);
+  }
+  
+  .description {
 	margin-bottom: 20px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -57,6 +61,7 @@
   .container {
 	 background: black;
   }
+  
 
   @media (max-width: 1050px) {
 	.image {
