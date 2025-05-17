@@ -6,7 +6,7 @@ export default function FooterSocialLinks() {
   return (
     <div id="contact" className={styles.container}>
       {socialLinks.map((link) => (
-        <a href={link.url} key={link.id} className="p-2">
+        <a href={link.url} key={link.id} className={styles.link} target="_blank" rel="noopener noreferrer">
           <Image width={50} height={50} src={link.img} alt={link.name} />
         </a>
       ))}

@@ -38,6 +38,11 @@
   gap: 15px;
 }
 
+.footerSocialLinks-module__3uFWdq__link:hover {
+  scale: 1.2;
+  transition: all .3s ease-in-out;
+}
+
 
 /* [project]/src/app/styles/componentStyles/footer/footer.module.css [app-client] (css) */
 .footer-module__wgB6jG__footer {
@@ -298,7 +303,8 @@
   min-width: 300px;
   min-height: 50px;
   margin-bottom: 20px;
-  border: #0000;
+  transition: all .2s;
+  border: 2px solid #5221e6;
   padding: 10px;
   background-color: wheat;
   font-size: 1rem;
@@ -326,7 +332,7 @@
   background: #5221e6;
   color: #fff;
   margin-top: 40px;
-  transition: transform .2s;
+  transition: all .2s;
 }
 
 .feedbackForm-module__JQYZfq__button:hover {
@@ -606,7 +612,7 @@
 
 .worksCarousel-module__Du515W__link {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   margin-top: auto;
   font-size: 18px;
   color: #fff;

@@ -54,7 +54,8 @@
   min-width: 300px;
   min-height: 50px;
   margin-bottom: 20px;
-  border: transparent;
+  transition: all 0.2s ease;
+  border: #5221e6 2px solid;
   padding: 10px;
   background-color: wheat;
   font-size: 1rem;
@@ -82,7 +83,7 @@
   background: #5221E6;
   color: white;
   margin-top: 40px;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button:hover {
@@ -127,6 +128,7 @@
     align-items: flex-start;
     flex-direction: column;
   }
+
   .formContainer {
     justify-content: center;
     margin-left: 0;

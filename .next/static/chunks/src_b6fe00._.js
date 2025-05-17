@@ -198,7 +198,7 @@ const socialLinks = [
         id: "github",
         name: "Github",
         img: "/images/footer/github.png",
-        url: 'mailto:https://github.com/Licrua'
+        url: 'https://github.com/Licrua'
     }
 ];
 const __TURBOPACK__default__export__ = socialLinks;
@@ -212,6 +212,7 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 {
 __turbopack_export_value__({
   "container": "footerSocialLinks-module__3uFWdq__container",
+  "link": "footerSocialLinks-module__3uFWdq__link",
 });
 }}),
 "[project]/src/app/components/footer/FooterSocialLinks.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
@@ -236,7 +237,9 @@ function FooterSocialLinks() {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$footer$2f$footerSocialLinks$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].container,
         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$socialLinks$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                 href: link.url,
-                className: "p-2",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$styles$2f$componentStyles$2f$footer$2f$footerSocialLinks$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].link,
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     width: 50,
                     height: 50,

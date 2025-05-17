@@ -22,7 +22,7 @@ const socialLinks = [
     id: "github",
     name: "Github",
     img: "/images/footer/github.png",
-	url: 'mailto:https://github.com/Licrua',
+	url: 'https://github.com/Licrua',
   },
 ];
 
