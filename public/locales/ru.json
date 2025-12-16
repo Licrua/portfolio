@@ -36,7 +36,7 @@
     },
     "footer": {
       "slogan": "Код, который работает. Дизайн, который вдохновляет.",
-      "copyright": "Права © 2025 - Все права защищены"
+      "copyright": "Licrua © 2025 - Все права защищены"
     },
     "projects": [
       {
@@ -101,23 +101,23 @@
         "image": "/images/works/wallpaperCalculator.png",
         "life": "https://wallpaper-calculator-887j.vercel.app/"
       },
-	  {
-      "name": "LicruaSchool",
-      "description": "LicruaSchool — это современное приложение для создания и управления списками желаний. Позволяет пользователям добавлять, редактировать и делиться своими желаниями с друзьями. Реализована авторизация, адаптивный дизайн и интеграция с социальными сетями.",
-      "stack": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Redux Toolkit",
-        "TailwindCSS",
-        "Firebase",
-        "Framer Motion",
-        "Clerk",
-        "React Hook Form"
-      ],
-      "image": "/images/works/outschool.png",
-      "life": "https://wishbone-app-demo.vercel.app/"
-    }
+      {
+        "name": "LicruaSchool",
+        "description": "LicruaSchool — это современное приложение для создания и управления списками желаний. Позволяет пользователям добавлять, редактировать и делиться своими желаниями с друзьями. Реализована авторизация, адаптивный дизайн и интеграция с социальными сетями.",
+        "stack": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Redux Toolkit",
+          "TailwindCSS",
+          "Firebase",
+          "Framer Motion",
+          "Clerk",
+          "React Hook Form"
+        ],
+        "image": "/images/works/outschool.png",
+        "life": "https://wishbone-app-demo.vercel.app/"
+      }
     ],
     "feedbackForm": {
       "title": "Обратная форма",
@@ -172,6 +172,19 @@
           "Рефакторинг легаси-кода",
           "Изучение Playwright",
           "Работа с MySQL базой данных и Firebase"
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Sberbank",
+        "position": "Fullstack - developer",
+        "tasks": [
+          "Разработка и поддержка внутренних банковских сервисов",
+          "Создание клиентской части на React и TypeScript",
+          "Разработка серверной логики на Express/Nest",
+          "Интеграция фронтенда с backend API",
+          "Работа с базами данных(sql and no sql) и серверной бизнес-логикой",
+          "Участие в проектировании и развитии ai функционала в приложениях"
         ]
       }
     ]

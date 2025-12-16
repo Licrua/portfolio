@@ -36,7 +36,7 @@
     },
     "footer": {
       "slogan": "Code that works. Design that inspires.",
-      "copyright": "Copyright © 2015 - All rights reserved"
+      "copyright": "Licrua © 2015 - All rights reserved"
     },
     "projects": [
       {
@@ -172,7 +172,20 @@
           "Learning Playwright",
           "Working with MySQL database and Firebase"
         ]
-      }
+      },
+	  {
+      "id": 4,
+      "company": "Sberbank",
+      "position": "Full-Stack Developer",
+      "tasks": [
+        "Development and maintenance of internal banking services",
+        "Building client-side applications using React and TypeScript",
+        "Development of server-side logic with Express and NestJS",
+        "Integration of frontend applications with backend APIs",
+        "Working with SQL and NoSQL databases and server-side business logic",
+        "Participation in the design and development of AI-powered features"
+      ]
+    }
     ]
   }
 }
