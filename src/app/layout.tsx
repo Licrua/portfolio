@@ -30,7 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
               j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-PJSL8789';
               f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-PJSL8789');
+              })(window,document,'script','dataLayer','GTM-57PGVSXW');
             `,
           }}
         />
@@ -41,7 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PJSL8789"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-57PGVSXW"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
