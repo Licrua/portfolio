@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import type { Metadata } from "next";
+import Script from "next/script";
 import sen from "../../public/fonts/sen";
 import "./styles/reset.css";
 import "./styles/globals.css";
@@ -17,44 +18,37 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale}>
       <head>
-        {/* Yandex.Metrika */}
-        <script
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-(function(m,e,t,r,i,k,a){
-  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {
-    if (document.scripts[j].src === r) { return; }
-  }
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0];
-  k.async=1;k.src=r;a.parentNode.insertBefore(k,a)
-})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105853093', 'ym');
-
-ym(105853093, 'init', {
-  ssr: true,
-  webvisor: true,
-  clickmap: true,
-  ecommerce: "dataLayer",
-  accurateTrackBounce: true,
-  trackLinks: true
-});
+              (function(w,d,s,l,i){w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-PJSL8789';
+              f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PJSL8789');
             `,
           }}
         />
-        <noscript>
-          <div>
-            <img
-              src="https://mc.yandex.ru/watch/105853093"
-              style={{ position: "absolute", left: "-9999px" }}
-              alt=""
-            />
-          </div>
-        </noscript>
-        {/* /Yandex.Metrika */}
+        {/* End Google Tag Manager */}
       </head>
 
       <body className={sen.className}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PJSL8789"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
