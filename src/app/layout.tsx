@@ -34,7 +34,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           }}
         />
       </head>
-
       <body className={sen.className}>
         <noscript>
           <iframe
@@ -44,7 +43,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
